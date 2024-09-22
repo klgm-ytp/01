@@ -7,16 +7,14 @@ El projecte 01 és un protocol d'acceptació tipus imk. Aquí potser es descriur
 <p align="center">---oooOooo---</p>
 
 <p align="center">
+  <a href=https://www.youtube.com/watch?v=FQkjIw8u3rU>
   <img src="https://github.com/klgm-ytp/01/raw/main/klgm.png" alt="ytp : youtube project - klgm : la cafeteria" width="360"/> 
+  </a>
 </p>
 
 <hr>
 
-# Vídeo
-
-https://www.youtube.com/watch?v=FQkjIw8u3rU
-
-<b>Si el penses veure no et cal llegir cap resum ni res. Simplement picar al link superior.</b> 
+<b>Si penses veure el vídeo no et cal llegir cap resum ni res. Simplement pica al gràfic superior.</b> 
 
 RESUM:
 
@@ -45,7 +43,7 @@ Segurament pujaré aquí referències a altres canals de youtube però això no 
 3. el password de github és el meu password preferit no tant tonto també de 9 chars que consisteix al de 8 que m'ha dit avui github que era hackejat al qual s'ha afegit un char i fa 9
 4. sembla que a github si canvies una imatge has de tornar a salvar la web que la crida
 5. el css no es suporta a les webs de github i el html crec que poc
-6. sembla que a la web externa klgm-ytp.github.io/10 no li van els links externs com van si entres a github
+6. a la web externa klgm-ytp.github.io/10 no li van els links externs com van si entres a github i els has de definir amb 'a href='
 7. encara que estic usant github no estic usant git perquè de moment no s'aplica i dificilment s'aplicarà en aquest cas, solament l'uso com a lloc on penjar una web
 
 <br>
