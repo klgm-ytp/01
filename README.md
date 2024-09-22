@@ -11,6 +11,10 @@ RESUM:
 
 Experiments psicològics de 1993 i 2001 mostren que preferim patir una mica més o gaudir una mica menys perquè oblidem les duracions i que recordem per punts de referència i els finals. Tenim tendència igualment a ignorar el que podem deduir per conjunts o probabilitat i busquem la representativitat de la memòria. Fem simplificacions i amb elles ens equivoquem. Tot el canal Veritasium val la pena de veure.
 
+
+![CLIC](01/clc2plus.png)
+
+
 # Què s'espera fer aquí en el futur?
 
 Es poden afegir més canals de youtube i una mica de programació.
