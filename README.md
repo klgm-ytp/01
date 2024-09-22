@@ -4,18 +4,13 @@
 Protocol d'acceptació tipus imk. Aquí es descriu nomès la API, no el sistema extern però dit 'imk' tot el model ja està dit i es pot usar una IA per a fer-ho tot.
 </p>
 
-<br>
 <p align="center">---oooOooo---</p>
-<br>
-<br>
 
 <p align="center">
-  <img src="https://github.com/klgm-ytp/01/raw/main/klgm.png" alt="ytp : youtube project - klgm : la cafeteria" width="320"/>
+  <img src="https://github.com/klgm-ytp/01/raw/main/klgm.png" alt="ytp : youtube project - klgm : la cafeteria" width="360"/>
 </p>
 
-<br>
 <hr>
-<br>
 
 # Vídeo
 
@@ -28,9 +23,10 @@ RESUM:
 Experiments psicològics de 1993 i 2001 mostren que preferim patir una mica més o gaudir una mica menys perquè oblidem les duracions i que recordem per punts de referència i els finals. Tenim tendència igualment a ignorar el que podem deduir per conjunts o probabilitat i busquem la representativitat de la memòria. Fem simplificacions i amb elles ens equivoquem. Tot el canal Veritasium val la pena de veure.
 
 <br>
+<hr>
 <br>
 
-# Què s'espera fer aquí en el futur?
+# Què s'espera fer aquí un altra dia?
 
 Es poden afegir més canals de youtube i una mica de programació.
 
@@ -41,7 +37,6 @@ L'ides de fer auth imk significa que tres informacions es passen a un ordinador 
 Segurament sí que efectivament pujaré aquí referències a altres canals de youtube. Això costa molt poc de fer encara que si lo altre ho fa una IA també costa poc de fer realment. La idea ja està regalada per si algú altre ho vol fer. 
 
 <br>
-<br>
 
 # PETIT MANUAL DE GITHUB
 
@@ -50,7 +45,6 @@ Segurament sí que efectivament pujaré aquí referències a altres canals de yo
 3. el password de github és el meu password preferit no tant tonto també de 9 chars que consisteix al de 8 que m'ha dit avui github que era hackejat al qual s'ha afegit un char i fa 9
 4. encara que estic usant github no estic usant git perquè de moment no s'aplica i dificilment s'aplicarà en aquest cas, solament l'uso com a lloc on penjar una web
 
-<br>
 <br>
 
 # MISCELLANEA
