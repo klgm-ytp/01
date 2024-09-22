@@ -2,7 +2,11 @@
 Protocol d'acceptació tipus imk. Aquí es descriu nomès la API, no el sistema extern però dit 'imk' tot el model ja està dit i es pot usar una IA per a fer-ho tot.
 
 <p align="center">
+  <table><tr><td>
   <img src="https://github.com/klgm-ytp/01/raw/main/clc2plus.png" alt="ytp : youtube project - klgm : la cafeteria" width="300"/>
+  </td><td>
+  <img src="https://github.com/klgm-ytp/01/raw/main/clc2plus.png" alt="ytp : youtube project - klgm : la cafeteria" width="300"/>
+   </td></tr></table>
 </p>
 
 <br>
