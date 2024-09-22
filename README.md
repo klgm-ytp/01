@@ -10,11 +10,11 @@ El projecte 01 és un protocol d'acceptació tipus imk. Aquí potser es descriur
   <a href=https://www.youtube.com/watch?v=FQkjIw8u3rU>
   <img src="https://github.com/klgm-ytp/01/raw/main/klgm.png" alt="ytp : youtube project - klgm : la cafeteria" width="360"/> 
   </a>
+<br>
+  <b>per a veure els vídeos pica al gràfic superior. No cal llegir res.</b> 
 </p>
 
 <hr>
-
-<b>Si penses veure el vídeo no et cal llegir cap resum ni res. Simplement pica al gràfic superior.</b> 
 
 RESUM:
 
