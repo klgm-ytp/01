@@ -1,5 +1,3 @@
-<div style="width: 400px; margin: auto;">
-
 # 01 (resum)
 
 <p>
@@ -7,21 +5,12 @@ Protocol d'acceptació tipus imk. Aquí es descriu nomès la API, no el sistema 
 </p>
 
 <p align="center">
-  <table><tr><td>
-  <img src="https://github.com/klgm-ytp/01/raw/main/clc2plus.png" alt="ytp : youtube project - klgm : la cafeteria" width="300"/>
-  </td><td>
-  <img src="https://github.com/klgm-ytp/01/raw/main/clc2plus.png" alt="ytp : youtube project - klgm : la cafeteria" width="300"/>
-   </td></tr></table>
+  <img src="https://github.com/klgm-ytp/01/raw/main/klgm.png" alt="ytp : youtube project - klgm : la cafeteria" width="500"/>
 </p>
 
 <br>
-<br>
 <hr>
 <br>
-<br>
-
-</div>
-
 
 # Vídeo
 
@@ -34,9 +23,7 @@ RESUM:
 Experiments psicològics de 1993 i 2001 mostren que preferim patir una mica més o gaudir una mica menys perquè oblidem les duracions i que recordem per punts de referència i els finals. Tenim tendència igualment a ignorar el que podem deduir per conjunts o probabilitat i busquem la representativitat de la memòria. Fem simplificacions i amb elles ens equivoquem. Tot el canal Veritasium val la pena de veure.
 
 <br>
-<br>
 <hr>
-<br>
 <br>
 
 # Què s'espera fer aquí en el futur?
@@ -59,3 +46,4 @@ Segurament sí que efectivament pujaré aquí referències a altres canals de yo
 1. He de dedicar una bona estona a perseguir i canviar totes les meves contes on he usat aquest password suposadament hackejat (primer els llocs realment perillosos). Tot plegat és massa feina per fer-ho ara però ho he de fer aviat.
 2. El password del gmail és el meu passwords super-tonto de baixa seguretat de 9 chars. 
 3. A gmail he hagut d'usar un punt per a separar klgm de ytp, mentre que a github m'han fet usar un guió
+4. qr code fet amb https://www.abcsubmit.com/site/free-qr-code-maker-with-logo-in-the-middle/ i una mica de GIMP
