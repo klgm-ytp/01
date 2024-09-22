@@ -1,5 +1,12 @@
 # 01 (resum)
+
+<style>
+  p { text-alignment:justify; width:75%; }
+</style>
+
+<p>
 Protocol d'acceptació tipus imk. Aquí es descriu nomès la API, no el sistema extern però dit 'imk' tot el model ja està dit i es pot usar una IA per a fer-ho tot.
+</p>
 
 <p align="center">
   <table><tr><td>
