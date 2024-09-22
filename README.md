@@ -1,7 +1,7 @@
 # 01 (resum)
 
 <p>
-Protocol d'acceptació tipus imk. Aquí es descriu nomès la API, no el sistema extern però dit 'imk' tot el model ja està dit i es pot usar una IA per a fer-ho tot.
+El projecte 01 és un protocol d'acceptació tipus imk. Aquí potser es descriurà encara més nomès la API, no el sistema extern però dit i descrit 'imk' (id, mètode i clau) tot el model ja està dit i es pot usar una IA per a fer tota la programació si cal.
 </p>
 
 <p align="center">---oooOooo---</p>
@@ -30,11 +30,11 @@ Experiments psicològics de 1993 i 2001 mostren que preferim patir una mica més
 
 Es poden afegir més canals de youtube i una mica de programació.
 
-La primera programació que cal és el control d'accès. Es pot fer programació relacionada amb les necessitats que podria arribar a tenir una wb d'aquest tipus que haguera de ser administrada sense que l'administrador tingui que conèixer detalls tècnics i absurds però importants com: usar github, programar, escriure webs, publicar-les, promoure-les, fer les coses de forma segura, etc
+La necessitat d'un sistema d'acceptació (es sol dir auth) té arrel a que l'administrador ( l'amo ) pugui ignorar coses.
 
-L'ides de fer auth imk significa que tres informacions es passen a un ordinador extern per a demanar-li una clau de decodificació. Aquestes tres informacions (o més) poden ser i = identitat, m = mètode, k = clau d'accès. Amb elles el servidor té un sistema que aquí no es documenta (per pura lògica, ja em diràs si no quina mena de seguretat és) però es documenta aquí el model, aquesta mateixa idea que podria ser implementada en un minut per chatgpt si se li demana. Per això aquesta web potser es pot dir que ja està acabada ja que solament s'ha de tenir clara l'idea del que es vol fer. Una part fonamental de la seguretat és que poden haver diferents mètodes de seguretat. Si n'hi ha solament ún, per bó que sigui, es relativament fàcil de hackejar. En poden haver millions facilment i aquest és un dels grups de millions que en poden haver.
+Tres informacions (imk) es passen a un ordinador extern per a demanar-li una clau de decodificació. Una part fonamental de la seguretat és que poden haver diferents mètodes de seguretat. Si n'hi ha solament ún, per bó que sigui, es relativament sensible. 
 
-Segurament sí que efectivament pujaré aquí referències a altres canals de youtube. Això costa molt poc de fer encara que si lo altre ho fa una IA també costa poc de fer realment. La idea ja està regalada per si algú altre ho vol fer. 
+Segurament pujaré aquí referències a altres canals de youtube però això no seria programació si no hobby. A més potser no ho hauria de fer perquè youtube ja té una forma de fer això. Seria una mica com un resum ampliat dels meus preferits. Jo també hauría d'afegir aquí formes bàsiques de comunicació ja que si no ho faig m'he de comunicar més que res amb altra gent de github i prefereixo fer-ho amb gent del meu entorn real.
 
 <br>
 
