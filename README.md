@@ -5,13 +5,17 @@ Protocol d'acceptació tipus imk. Aquí es descriu nomès la API, no el sistema 
 </p>
 
 <br>
-<center>---oooOooo---</center>
+<p align="center">---oooOooo---</p>
+<br>
 <br>
 
 <p align="center">
-  <img src="https://github.com/klgm-ytp/01/raw/main/klgm.png" alt="ytp : youtube project - klgm : la cafeteria" width="400"/>
+  <img src="https://github.com/klgm-ytp/01/raw/main/klgm.png" alt="ytp : youtube project - klgm : la cafeteria" width="320"/>
 </p>
 
+<br>
+<hr>
+<br>
 
 # Vídeo
 
@@ -24,7 +28,6 @@ RESUM:
 Experiments psicològics de 1993 i 2001 mostren que preferim patir una mica més o gaudir una mica menys perquè oblidem les duracions i que recordem per punts de referència i els finals. Tenim tendència igualment a ignorar el que podem deduir per conjunts o probabilitat i busquem la representativitat de la memòria. Fem simplificacions i amb elles ens equivoquem. Tot el canal Veritasium val la pena de veure.
 
 <br>
-<hr>
 <br>
 
 # Què s'espera fer aquí en el futur?
@@ -37,6 +40,9 @@ L'ides de fer auth imk significa que tres informacions es passen a un ordinador 
 
 Segurament sí que efectivament pujaré aquí referències a altres canals de youtube. Això costa molt poc de fer encara que si lo altre ho fa una IA també costa poc de fer realment. La idea ja està regalada per si algú altre ho vol fer. 
 
+<br>
+<br>
+
 # PETIT MANUAL DE GITHUB
 
 1. a aquesta mena de web se li diu repositori i és https://github.com/klgm-ytp/01
@@ -44,9 +50,15 @@ Segurament sí que efectivament pujaré aquí referències a altres canals de yo
 3. el password de github és el meu password preferit no tant tonto també de 9 chars que consisteix al de 8 que m'ha dit avui github que era hackejat al qual s'ha afegit un char i fa 9
 4. encara que estic usant github no estic usant git perquè de moment no s'aplica i dificilment s'aplicarà en aquest cas, solament l'uso com a lloc on penjar una web
 
+<br>
+<br>
+
 # MISCELLANEA
 
 1. He de dedicar una bona estona a perseguir i canviar totes les meves contes on he usat aquest password suposadament hackejat (primer els llocs realment perillosos). Tot plegat és massa feina per fer-ho ara però ho he de fer aviat.
 2. El password del gmail és el meu passwords super-tonto de baixa seguretat de 9 chars. 
 3. A gmail he hagut d'usar un punt per a separar klgm de ytp, mentre que a github m'han fet usar un guió
 4. qr code fet amb https://www.abcsubmit.com/site/free-qr-code-maker-with-logo-in-the-middle/ i una mica de GIMP
+
+
+<b>Joan Ignasi 2024</b>
