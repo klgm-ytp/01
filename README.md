@@ -4,13 +4,14 @@
 Protocol d'acceptació tipus imk. Aquí es descriu nomès la API, no el sistema extern però dit 'imk' tot el model ja està dit i es pot usar una IA per a fer-ho tot.
 </p>
 
+<br>
+<center>---oooOooo---</center>
+<br>
+
 <p align="center">
-  <img src="https://github.com/klgm-ytp/01/raw/main/klgm.png" alt="ytp : youtube project - klgm : la cafeteria" width="500"/>
+  <img src="https://github.com/klgm-ytp/01/raw/main/klgm.png" alt="ytp : youtube project - klgm : la cafeteria" width="400"/>
 </p>
 
-<br>
-<hr>
-<br>
 
 # Vídeo
 
@@ -38,8 +39,10 @@ Segurament sí que efectivament pujaré aquí referències a altres canals de yo
 
 # PETIT MANUAL DE GITHUB
 
-1. https://github.com/klgm-ytp/01/upload/main és el lloc on he de copiar les dades si ho vull fer per la web
-2. el password de github és el meu password preferit no tant tonto també de 9 chars que consisteix al de 8 que m'ha dit avui github que era hackejat al qual s'ha afegit un char i fa 9
+1. a aquesta mena de web se li diu repositori i és https://github.com/klgm-ytp/01
+2. https://github.com/klgm-ytp/01/upload/main és el lloc on he de copiar les dades si ho vull fer per la web
+3. el password de github és el meu password preferit no tant tonto també de 9 chars que consisteix al de 8 que m'ha dit avui github que era hackejat al qual s'ha afegit un char i fa 9
+4. encara que estic usant github no estic usant git perquè de moment no s'aplica i dificilment s'aplicarà en aquest cas, solament l'uso com a lloc on penjar una web
 
 # MISCELLANEA
 
