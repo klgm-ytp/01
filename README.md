@@ -1,7 +1,12 @@
-# 01
+# 01 (resum)
 API auth externa imk. No dic l'extern per seguretat. El tracta del model.
 
-# ytp és YouTube Project - klgm és un lloc... però quin?
+
+<p align="center">
+  <img src="https://github.com/klgm-ytp/01/raw/main/clc2plus.png" alt="ytp : youtube project - klgm : la cafeteria" width="300"/>
+</p>
+
+# Vídeo
 
 https://www.youtube.com/watch?v=FQkjIw8u3rU
 
@@ -12,7 +17,7 @@ RESUM:
 Experiments psicològics de 1993 i 2001 mostren que preferim patir una mica més o gaudir una mica menys perquè oblidem les duracions i que recordem per punts de referència i els finals. Tenim tendència igualment a ignorar el que podem deduir per conjunts o probabilitat i busquem la representativitat de la memòria. Fem simplificacions i amb elles ens equivoquem. Tot el canal Veritasium val la pena de veure.
 
 
-![Texto alternativo](https://github.com/klgm-ytp/01/raw/main/clc2plus.png)
+
 
 
 # Què s'espera fer aquí en el futur?
