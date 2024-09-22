@@ -11,20 +11,19 @@ El projecte 01 és un protocol d'acceptació tipus imk. Aquí potser es descriur
   <img src="https://github.com/klgm-ytp/01/raw/main/klgm.png" alt="ytp : youtube project - klgm : la cafeteria" width="360"/> 
   </a>
 <br>
-  <b>per a veure els vídeos pica al gràfic superior. No cal llegir res.</b> 
+  <b>per a veure vídeo pica al gràfic superior. No cal llegir res.</b> 
 </p>
 
 <hr>
 
 RESUM:
 
-Experiments psicològics de 1993 i 2001 mostren que preferim patir una mica més o gaudir una mica menys perquè oblidem les duracions i que recordem per punts de referència i els finals. Tenim tendència igualment a ignorar el que podem deduir per conjunts o probabilitat i busquem la representativitat de la memòria. Fem simplificacions i amb elles ens equivoquem. Tot el canal Veritasium val la pena de veure.
+Experiments psicològics de 1993 i 2001 mostren que preferim patir una mica més o gaudir una mica menys perquè oblidem les duracions i que recordem per punts de referència i els finals. Tenim tendència igualment a ignorar el que podem deduir per conjunts o probabilitat i busquem la representativitat de la memòria. Fem simplificacions i amb elles ens equivoquem. Tot el canal Veritasium val la pena veure.
 
-<br>
 <hr>
 <br>
 
-# Què s'espera fer aquí un altra dia?
+# Què s'espera fer un altra dia?
 
 Es poden afegir més canals de youtube i una mica de programació.
 
