@@ -1,8 +1,6 @@
-# 01 (resum)
+<div style="width: 400px; margin: auto;">
 
-<style>
-  p { text-alignment:justify; width:75%; }
-</style>
+# 01 (resum)
 
 <p>
 Protocol d'acceptació tipus imk. Aquí es descriu nomès la API, no el sistema extern però dit 'imk' tot el model ja està dit i es pot usar una IA per a fer-ho tot.
@@ -21,6 +19,9 @@ Protocol d'acceptació tipus imk. Aquí es descriu nomès la API, no el sistema 
 <hr>
 <br>
 <br>
+
+</div>
+
 
 # Vídeo
 
