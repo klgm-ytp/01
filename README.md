@@ -1,10 +1,15 @@
 # 01 (resum)
-API auth externa imk. No dic l'extern per seguretat. El tracta del model.
-
+Protocol d'acceptació tipus imk. Aquí es descriu nomès la API, no el sistema extern però dit 'imk' tot el model ja està dit i es pot usar una IA per a fer-ho tot.
 
 <p align="center">
   <img src="https://github.com/klgm-ytp/01/raw/main/clc2plus.png" alt="ytp : youtube project - klgm : la cafeteria" width="300"/>
 </p>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
 
 # Vídeo
 
@@ -16,9 +21,11 @@ RESUM:
 
 Experiments psicològics de 1993 i 2001 mostren que preferim patir una mica més o gaudir una mica menys perquè oblidem les duracions i que recordem per punts de referència i els finals. Tenim tendència igualment a ignorar el que podem deduir per conjunts o probabilitat i busquem la representativitat de la memòria. Fem simplificacions i amb elles ens equivoquem. Tot el canal Veritasium val la pena de veure.
 
-
-
-
+<br>
+<br>
+<hr>
+<br>
+<br>
 
 # Què s'espera fer aquí en el futur?
 
