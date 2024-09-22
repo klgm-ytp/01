@@ -1,3 +1,7 @@
+---
+layout: none
+---
+
 # 01 (resum)
 
 <p>
