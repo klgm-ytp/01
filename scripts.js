@@ -39,7 +39,7 @@ function generarVideos(videos) {
     });
 }
 
-// Función para enviar el comentario (la parte del comentario permanece igual)
+// Función para enviar el comentario
 function enviarComentario() {
     const comment = document.getElementById('user-comment').value;
 
@@ -61,13 +61,6 @@ function enviarComentario() {
         });
 }
 
-// Ejecutar las funciones cuando la página esté cargada
-window.onload = function() {
-    cargarVideos(); // Cargar los videos desde el JSON
-    document.getElementById('send-comment').addEventListener('click', enviarComentario);
-};
-
-window.onload = function() {
-    generarVideos();
-    document.getElementById('send-comment').addEventListener('click', enviarComentario);
-};
+// Ejecutar las funciones de manera inmediata ya que se usa 'defer'
+cargarVideos();
+document.getElementById('send-comment').addEventListener('click', enviarComentario);
