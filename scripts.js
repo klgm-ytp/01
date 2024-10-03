@@ -61,6 +61,8 @@ function enviarComentario() {
         });
 }
 
-// Ejecutar las funciones de manera inmediata ya que se usa 'defer'
-cargarVideos();
-document.getElementById('send-comment').addEventListener('click', enviarComentario);
+// Ejecutar las funciones cuando la página esté cargada
+window.onload = function() {
+    cargarVideos(); // Cargar los videos desde el JSON
+    document.getElementById('send-comment').addEventListener('click', enviarComentario);
+};
