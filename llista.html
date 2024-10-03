@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Videos y Resúmenes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("TU_USER_ID"); // Reemplaza con tu User ID de EmailJS
+        })();
+    </script>
+</head>
+<body>
+
+    <h1>Videos con Resumen</h1>
+    <div id="video-list" class="container"></div>
+
+    <div class="button-container">
+        <a href="index.html" class="btn">Volver a la página principal</a>
+    </div>
+
+    <div class="comment-section">
+        <h2>Deja tu comentario</h2>
+        <textarea id="user-comment" placeholder="Escribe tu comentario aquí..." rows="4"></textarea>
+        <button class="btn" id="send-comment">Enviar Comentario</button>
+    </div>
+
+</body>
+</html>
