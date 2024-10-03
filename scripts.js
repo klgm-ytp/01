@@ -5,8 +5,8 @@ const videos = [
         resumen: "Aquí parlo del video 1. Aquí parlo del video 1. Aquí parlo del video 1. Aquí parlo del video 1. Aquí parlo del video 1. Aquí parlo del video 1. Aquí parlo del video 1. Aquí parlo del video 1. "
     },
     {
-        url: "https://www.youtube.com/embed/tgbNymZ7vqY",
-        resumen: "En este video se explica cómo las tecnologías emergentes están cambiando..."
+        url: "https://www.youtube.com/watch?v=MykPPXHShzs",
+        resumen: "Aquí parlo del video 2. Aquí parlo del video 2. Aquí parlo del video 2. Aquí parlo del video 2. Aquí parlo del video 2. Aquí parlo del video 2. Aquí parlo del video 2. Aquí parlo del video 2. "
     }
 ];
 
