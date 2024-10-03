@@ -1,9 +1,9 @@
 const videos = [
     {
-        url: "https://www.youtube.com/watch?v=FQkjIw8u3rU",
+        url: "https://www.youtube.com/embed/FQkjIw8u3rU",
         resumen: "Aquí parlo del video 1. Aquí parlo del video 1. Aquí parlo del video 1. Aquí parlo del video 1. Aquí parlo del video 1. Aquí parlo del video 1. Aquí parlo del video 1. Aquí parlo del video 1. "
     }, {
-        url: "https://www.youtube.com/watch?v=MykPPXHShzs",
+        url: "https://www.youtube.com/embed/MykPPXHShzs",
         resumen: "Aquí parlo del video 2. Aquí parlo del video 2. Aquí parlo del video 2. Aquí parlo del video 2. Aquí parlo del video 2. Aquí parlo del video 2. Aquí parlo del video 2. Aquí parlo del video 2. "
     }
 ];
