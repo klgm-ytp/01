@@ -1,6 +1,6 @@
 body {
     font-family: 'Georgia', serif;
-    margin: 40px;
+    margin: 20px;
     background-color: #f5f5f5;
     color: #333;
     line-height: 1.6;
@@ -13,13 +13,9 @@ body {
     margin-bottom: 40px;
 }
 
-.video-container {
+.video-container, .summary-container {
     width: 48%;
-}
-
-.summary-container {
-    width: 48%;
-    text-align: justify;
+    margin-bottom: 20px;
 }
 
 iframe {
@@ -60,8 +56,41 @@ textarea {
     font-family: inherit;
     font-size: 16px;
     margin-bottom: 10px;
+    resize: none;
 }
 
 #send-comment {
     display: inline-block;
 }
+
+@media (max-width: 768px) {
+    .video-container, .summary-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    iframe {
+        height: 250px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 10px;
+    }
+
+    iframe {
+        height: 200px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
+
