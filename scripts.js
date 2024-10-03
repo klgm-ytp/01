@@ -1,10 +1,10 @@
 const videos = [
     {
         url: "https://www.youtube.com/embed/FQkjIw8u3rU",
-        resumen: "Aquí parlo del video 1. Aquí parlo del video 1. Aquí parlo del video 1. Aquí parlo del video 1. Aquí parlo del video 1. Aquí parlo del video 1. Aquí parlo del video 1. Aquí parlo del video 1. "
+        resumen: "Uns 1200 anys d'història... Realment calen els 30 minuts. Diu moltes coses molt fonamentals però poc conegudes."
     }, {
         url: "https://www.youtube.com/embed/MykPPXHShzs",
-        resumen: "Aquí parlo del video 2. Aquí parlo del video 2. Aquí parlo del video 2. Aquí parlo del video 2. Aquí parlo del video 2. Aquí parlo del video 2. Aquí parlo del video 2. Aquí parlo del video 2. "
+        resumen: "Experiments de 1993 i 2001 mostren que preferim patir més o gaudir menys perquè oblidem les duracions i recordem solament coses puntuals. Ignorem el que podem deduir i adaptem idees al que creiem que és normal i no sempre ho és."
     }
 ];
 function generarVideos() {
