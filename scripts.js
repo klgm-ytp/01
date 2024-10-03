@@ -37,7 +37,7 @@ function generarVideos(videos) {
         container.appendChild(videoContainer);
         container.appendChild(summaryContainer);
 
-        const separador = document.createElement('<hr>');
+        const separador = document.createElement('hr');
         container.appendChild(separador);
     });
 }
