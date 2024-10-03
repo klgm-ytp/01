@@ -1,8 +1,8 @@
 // Array que contiene las URLs de los videos y sus resúmenes
 const videos = [
     {
-        url: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        resumen: "Este video trata sobre la importancia de la perseverancia..."
+        url: "https://www.youtube.com/watch?v=FQkjIw8u3rU",
+        resumen: "Aquí parlo del video 1. Aquí parlo del video 1. Aquí parlo del video 1. Aquí parlo del video 1. Aquí parlo del video 1. Aquí parlo del video 1. Aquí parlo del video 1. Aquí parlo del video 1. "
     },
     {
         url: "https://www.youtube.com/embed/tgbNymZ7vqY",
