@@ -9,23 +9,34 @@
     <script>
         (function(){
             emailjs.init("TU_USER_ID"); // Reemplaza con tu User ID de EmailJS
+/*
+
+Instrucciones para configurar EmailJS:
+Regístrate en EmailJS y crea una cuenta.
+Obtén tu User ID: Después de registrarte, verás un User ID. Colócalo en el archivo HTML 
+dentro de la función emailjs.init().
+Crea un nuevo servicio de correo electrónico en EmailJS, usando tu dirección de Gmail u otro 
+proveedor de correo.
+Crea una plantilla de email en EmailJS. Puedes definir cómo deseas que se vea el mensaje que se enviará.
+Reemplaza TU_SERVICE_ID y TU_TEMPLATE_ID en el archivo scripts.js con los valores correspondientes a 
+tu servicio de correo y la plantilla que creaste en EmailJS.
+
+*/
+            
         })();
     </script>
 </head>
 <body>
-
+<blockquote>
     <h1>Videos amb Resumen</h1>
     <div id="video-list" class="container"></div>
-
-    <div class="button-container">
-        <a href="index.html" class="btn">Tornar</a>
-    </div>
-
+    <div class="button-container"><a href="index.html" class="btn">Tornar</a></div>
     <div class="comment-section">
-        <h2>Deixa un comentari</h2>
+        <h2>Deixa un comentari (encara no funciona)</h2>
         <textarea id="user-comment" placeholder="Escriu el teu comentari aquí..." rows="4"></textarea>
         <button class="btn" id="send-comment">Enviar</button>
     </div>
+</blockquote>
 <script src="scripts.js"></script>
 </body>
 </html>
