@@ -55,13 +55,13 @@ function enviarComentario() {
         message: comment,
     };
 
-    emailjs.send('TU_SERVICE_ID', 'TU_TEMPLATE_ID', templateParams)
+    emailjs.send('gmailpersonal', 'template_76kgfyr', templateParams)
         .then(function(response) {
             alert("Comentari enviat!");
             document.getElementById('user-comment').value = ""; // Limpiar campo de texto
         }, function(error) {
             alert("Hubo un error al enviar el comentario, inténtalo de nuevo.");
-        });
+        }); // service id, template id
 }
 
 // Ejecutar las funciones cuando la página esté cargada
