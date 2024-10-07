@@ -45,25 +45,16 @@ function generarVideos(videos) {
 // Función para enviar el comentario
 function enviarComentario() {
     const comment = document.getElementById('user-comment').value;
-
-    if (comment.trim() === "") {
-        alert("Escriu un comentari si us plau:");
-        return;
-    }
-
-    const templateParams = {
-        message: comment,
-    };
-
+    if (comment.trim() === "") { alert("Escriu un comentari"); return; }
+    const templateParams = { message: comment, };
     emailjs.send('gmailpersonal', 'template_76kgfyr', templateParams)
         .then(function(response) {
             alert("Comentari enviat!");
             document.getElementById('user-comment').value = ""; // Limpiar campo de texto
         }, function(error) {
-            alert("Hubo un error al enviar el comentario, inténtalo de nuevo.");
+            alert("Error.");
         }); // service id, template id
 }
-
 // Ejecutar las funciones cuando la página esté cargada
 window.onload = function() {
     cargarVideos(); // Cargar los videos desde el JSON
