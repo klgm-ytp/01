@@ -57,6 +57,7 @@ function enviarComentario() {
 }
 // Ejecutar las funciones cuando la página esté cargada
 window.onload = function() {
+    emailjs.init("27q6SmJ9-_GO1kYfa");
     cargarVideos(); // Cargar los videos desde el JSON
     document.getElementById('send-comment').addEventListener('click', enviarComentario);
 };
