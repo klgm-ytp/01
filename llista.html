@@ -5,25 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pàgina de Videos</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="email.js"></script>
-    <script>
+    <!--script defer src="email.js"></script--><!-- desactivo email.js per provar llista -->
+    <!--script>
         (function(){ emailjs.init("27q6SmJ9-_GO1kYfa"); 
             // User ID = API Key de EmailJS 
         })();       
-    </script>
+</script-->
 </head>
 <body>
-<br>v0.02<br>
+<br>v0.04<br>
 <blockquote>
     <h1>Videos amb Resumen</h1>
     <div id="video-list" class="container"></div>
     <div class="button-container"><a href="index.html" class="btn">Tornar</a></div>
+    
     <div class="comment-section">
         <h2>Deixa un comentari (encara no funciona)</h2>
         <textarea id="user-comment" placeholder="Escriu el teu comentari aquí..." rows="4"></textarea>
         <button class="btn" id="send-comment">Enviar</button>
     </div>
+<!--
+    además de validación de campos vacios, honeypot y recaptcha, tasa por ip, 
+    pregunta de seguridad, requerir javascript, contar el tiempo y confirmar 
+    el correo electrónico ya son muchas cosas, además tengo que usar formspree 
+    que solo admite 50 emails gratis, en cambio emailjs me va a permitir 
+    enviar muchos mas gratis
+-->
+ 
 </blockquote>
-<!--script src="scripts.js"></script-->
+<script src="scripts.js"></script>
 </body>
 </html>
