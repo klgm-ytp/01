@@ -9,26 +9,31 @@
     <!--script defer src="email.js"></script com el cdn funciona he de recordar esborrar email.js -->
 </head>
 <body>
-<br>v0.05<br>
+<br>v0.06<br>
 <blockquote>
     <h1>Videos amb Resumen</h1>
     <div id="video-list" class="container"></div>
     <div class="button-container"><a href="index.html" class="btn">Tornar</a></div>
     
     <div class="comment-section">
-        <h2>Deixa un comentari anònim</h2>
-        <textarea style="width: 70%; margin: 0 auto; display: block;" 
+        <h2>Deixa comentari anònim</h2>
+        <textarea style="width: 60%; margin: 0 auto; display: block;" 
                   id="user-comment" 
                   placeholder="Escriu el teu comentari aquí..."    
                   rows="4">
         </textarea>
+        <br>
         <button class="btn" id="send-comment">Enviar</button>
     </div>
-<!--
-    además de validación de campos vacios, honeypot y recaptcha, tasa por ip, 
-    pregunta de seguridad, requerir javascript, contar el tiempo y confirmar 
-    el correo electrónico son muchas cosas pero tengo que validar para evitar bots
-    formspree admite 50 emails gratis, emailjs 200 (al mes o en total?) 
+<!-
+    nivells de validació per a evitar bots:
+    
+    1 - (1) control camps buits, (2) honeypot
+    2 - (3) recaptcha, (4) tasa máxima por ip, (5) pregunta de seguretat, 
+        (6) requerir javascript, (7) contar temps mínim 
+        (8) confirmar correu electrónic (això ha és un registre) 
+    
+    aplicar nivell 2 si els bots esgoten els 200 mails per mes
 -->
  
 </blockquote>
