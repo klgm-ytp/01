@@ -46,7 +46,7 @@ function generarVideos(videos) {
 function enviarComentario() {
     const comment = document.getElementById('user-comment').value;
     if (comment.trim() === "") { alert("Escriu un comentari"); return; }
-    const templateParams = { message: comment, };
+    const templateParams = { message: comment, from_name: "perico de los palotes", };
     emailjs.send('gmailpersonal', 'template_76kgfyr', templateParams)
         .then(function(response) {
             alert("Comentari enviat!");
@@ -57,7 +57,7 @@ function enviarComentario() {
 }
 // Ejecutar las funciones cuando la página esté cargada
 window.onload = function() {
- //   emailjs.init("27q6SmJ9-_GO1kYfa");
+    emailjs.init("6fA2OytynKI7ROlMU");
     cargarVideos(); // Cargar los videos desde el JSON
     document.getElementById('send-comment').addEventListener('click', enviarComentario);
 };
