@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!--
-    PENDENT: 
-
-    ara que ja funciona un altra vegada 
-    la llista he de veure per quina raó si 
-    intento executar mailjs es trenca tot
-    
-    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pàgina de Videos</title>
@@ -24,16 +16,19 @@
     <div class="button-container"><a href="index.html" class="btn">Tornar</a></div>
     
     <div class="comment-section">
-        <h2>Deixa un comentari (encara no funciona)</h2>
-        <textarea id="user-comment" placeholder="Escriu el teu comentari aquí..." rows="4"></textarea>
+        <h2>Deixa un comentari anònim</h2>
+        <textarea style="width: 70%; margin: 0 auto; display: block;" 
+                  id="user-comment" 
+                  placeholder="Escriu el teu comentari aquí..."    
+                  rows="4">
+        </textarea>
         <button class="btn" id="send-comment">Enviar</button>
     </div>
 <!--
     además de validación de campos vacios, honeypot y recaptcha, tasa por ip, 
     pregunta de seguridad, requerir javascript, contar el tiempo y confirmar 
-    el correo electrónico ya son muchas cosas, además tengo que usar formspree 
-    que solo admite 50 emails gratis, en cambio emailjs me va a permitir 
-    enviar muchos mas gratis
+    el correo electrónico son muchas cosas pero tengo que validar para evitar bots
+    formspree admite 50 emails gratis, emailjs 200 (al mes o en total?) 
 -->
  
 </blockquote>
