@@ -59,18 +59,18 @@ iframe {
     display: flex;
     align-items: flex-start; /* Alinea los elementos desde el top */
     justify-content: space-between;
-    margin-bottom: 20px; /* Espacio entre videos */
+    margin-bottom: 10px; /* Espacio entre videos */
 }
 
 /* Ajusta el tamaño del video (mitad de tamaño) */
 .video-container iframe {
-    width: 200px;  /* Mitad del ancho */
-    height: 120px; /* Mitad de la altura */
+    width: 250px;  /* Mitad del ancho */
+    height: 150px; /* Mitad de la altura */
 }
 
 /* El contenedor del resumen a la derecha */
 .summary-container {
-    width: 400px;  /* Ajusta el tamaño para el texto a la derecha */
+    width: 500px;  /* Ajusta el tamaño para el texto a la derecha */
     margin-left: 10px; /* Espacio entre el video y el texto */
 }
 
@@ -84,7 +84,7 @@ iframe {
 hr {
     width: 100%;
     border: 1px solid #ccc;
-    margin: 20px 0; /* Espacio alrededor del separador */
+    margin: 10px 0; /* Espacio alrededor del separador */
 }
 
 
