@@ -24,6 +24,7 @@ function cargarVideos() {
 }
 
 // Función para generar el selector de tipos de video
+/*
 function generarSelector(videos) {
     const videoTypes = [...new Set(videos.map(video => video.tipus))]; // Extraer tipos únicos
     const selectElement = document.getElementById('video-type');
@@ -34,7 +35,45 @@ function generarSelector(videos) {
         option.innerText = type; // Muestra el tipo como texto
         selectElement.appendChild(option);
     });
+        document.getElementById('video-type').value = "Vocaloid Party";
 }
+*/
+function generarSelector(videos) {
+    const videoTypes = [...new Set(videos.map(video => video.tipus))]; // Extraer tipos únicos
+    const selectElement = document.getElementById('video-type');
+
+    // Limpiar opciones existentes
+    selectElement.innerHTML = '';
+
+    // Agregar opción "Todos" (puedes mantenerla si lo deseas)
+    const optionTodos = document.createElement('option');
+    optionTodos.value = 'todos';
+    optionTodos.innerText = 'Todos';
+    selectElement.appendChild(optionTodos);
+
+    // Agregar opciones de tipos desde el JSON
+    videoTypes.forEach(type => {
+        const option = document.createElement('option');
+        option.value = type;
+        option.innerText = type; // Muestra el tipo como texto
+        selectElement.appendChild(option);
+    });
+
+    // Preseleccionar "Vocaloid Party"
+    selectElement.value = "Vocaloid Party"; // Cambia a "Vocaloid Party"
+    
+    // Filtrar videos por el tipo seleccionado al cargar
+    filtrarVideosPorTipo("Vocaloid Party", videos);
+}
+
+// Función para filtrar videos según el tipo seleccionado
+function filtrarVideosPorTipo(tipoSeleccionado, videos) {
+    const container = document.getElementById('video-list');
+    container.innerHTML = ''; // Limpiar lista existente
+    const filteredVideos = tipoSeleccionado === 'todos' ? videos : videos.filter(video => video.tipus === tipoSeleccionado);
+    generarVideos(filteredVideos); // Mostrar los videos filtrados
+}
+
 
 // Función para generar los videos en la página
 function generarVideos(videos) {
