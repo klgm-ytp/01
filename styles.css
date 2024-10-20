@@ -64,8 +64,8 @@ iframe {
 
 /* Ajusta el tamaño del video */
 .video-container iframe {
-    width: 500px;  /* Ajusta el ancho del video como necesites */
-    height: 300px; /* Ajusta la altura del video como necesites */
+    width: 250px;  /* Ajusta el ancho del video como necesites */
+    height: 150px; /* Ajusta la altura del video como necesites */
 }
 
 /* El contenedor del resumen a la derecha */
