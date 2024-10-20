@@ -57,29 +57,32 @@ iframe {
 /* Estilo para el contenedor del video y el resumen */
 .video-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Alinea los elementos desde el top */
     justify-content: space-between;
     margin-bottom: 20px; /* Espacio entre videos */
 }
 
-/* Ajusta el tamaño del video */
+/* Ajusta el tamaño del video (mitad de tamaño) */
 .video-container iframe {
-    width: 250px;  /* Ajusta el ancho del video como necesites */
-    height: 150px; /* Ajusta la altura del video como necesites */
+    width: 250px;  /* Mitad del ancho */
+    height: 150px; /* Mitad de la altura */
 }
 
 /* El contenedor del resumen a la derecha */
 .summary-container {
     width: 300px;  /* Ajusta el tamaño para el texto a la derecha */
     margin-left: 20px; /* Espacio entre el video y el texto */
+    align-self: flex-start; /* Alinea el texto en la parte superior */
 }
 
 /* Separador entre los videos */
 hr {
+    visible: no;
     width: 100%;
     border: 1px solid #ccc;
     margin: 20px 0; /* Espacio alrededor del separador */
 }
+
 
 /* afegit final */
 
