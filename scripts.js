@@ -8,22 +8,20 @@ function cargarVideos() {
             return response.json();
         })
         .then(data => {
-            generarSelector(data.videos); // Llama a la función para generar el selector
-            generarVideos(data.videos); // Muestra todos los videos al principio
+            // Solo llamamos a generarSelector, que se encargará de 
+            // filtrar y mostrar los videos inicialmente
+            generarSelector(data.videos);
 
             // Agregar un evento para filtrar los videos cuando se cambia el selector
             document.getElementById('video-type').addEventListener('change', function() {
                 const selectedType = this.value;
-                const filteredVideos = selectedType ? data.videos.filter(video => video.tipus === selectedType) : data.videos;
-                generarVideos(filteredVideos);
+                filtrarVideosPorTipo(selectedType, data.videos);
             });
         })
         .catch(error => {
             console.error('Error:', error);
         });
 }
-
-------
 
 function generarSelector(videos) {
     const videoTypes = [...new Set(videos.map(video => video.tipus))];
@@ -43,22 +41,14 @@ function generarSelector(videos) {
         const option = document.createElement('option');
         option.value = type;
         option.innerText = type;
-        // Marcar "Vocaloid Party" como preseleccionado
         if (type === "Vocaloid Party") {
             option.selected = true;
         }
         selectElement.appendChild(option);
     });
 
-    // Asegurarnos de que "Vocaloid Party" esté seleccionado inicialmente
-    // y filtrar los videos inmediatamente
-    selectElement.value = "Vocaloid Party";
+    // Filtrar inmediatamente por Vocaloid Party
     filtrarVideosPorTipo("Vocaloid Party", videos);
-    
-    // Añadir el evento de cambio al selector
-    selectElement.addEventListener('change', (event) => {
-        filtrarVideosPorTipo(event.target.value, videos);
-    });
 }
 
 function filtrarVideosPorTipo(tipoSeleccionado, videos) {
@@ -69,56 +59,6 @@ function filtrarVideosPorTipo(tipoSeleccionado, videos) {
         : videos.filter(video => video.tipus === tipoSeleccionado);
     generarVideos(filteredVideos);
 }
-
--------
-
-function generarSelector(videos) {
-    const videoTypes = [...new Set(videos.map(video => video.tipus))]; // Extraer tipos únicos
-    const selectElement = document.getElementById('video-type');
-
-    // Limpiar opciones existentes
-    selectElement.innerHTML = '';
-
-    // Agregar opción "Todos"
-    const optionTodos = document.createElement('option');
-    optionTodos.value = 'todos';
-    optionTodos.innerText = 'Todos';
-    selectElement.appendChild(optionTodos);
-
-    // Agregar opciones de tipos desde el JSON
-    videoTypes.forEach(type => {
-        const option = document.createElement('option');
-        option.value = type;
-        option.innerText = type; // Muestra el tipo como texto
-
-        // Marcar "Vocaloid Party" como preseleccionado
-        if (type === "Vocaloid Party") {
-            option.selected = true; // Marcar como seleccionado
-        }
-
-        selectElement.appendChild(option);
-    });
-
-    // Filtrar videos por el tipo preseleccionado (Vocaloid Party o el valor predefinido)
-    const tipoPreseleccionado = selectElement.value === 'todos' ? 'Vocaloid Party' : selectElement.value;
-    filtrarVideosPorTipo(tipoPreseleccionado, videos); // Filtrar directamente por el valor preseleccionado
-}
-
-// Función para filtrar videos según el tipo seleccionado
-function filtrarVideosPorTipo(tipoSeleccionado, videos) {
-    const container = document.getElementById('video-list');
-    container.innerHTML = ''; // Limpiar lista existente
-    const filteredVideos = tipoSeleccionado === 'todos' ? videos : videos.filter(video => video.tipus === tipoSeleccionado);
-    generarVideos(filteredVideos); // Mostrar los videos filtrados
-}
-
-// Añadir el evento de cambio al selector para filtrar los videos dinámicamente
-document.getElementById('video-type').addEventListener('change', (event) => {
-    filtrarVideosPorTipo(event.target.value, videos); // Asegúrate de que 'videos' esté accesible aquí
-});
-
-
-
 
 // Función para generar los videos en la página
 function generarVideos(videos) {
