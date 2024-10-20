@@ -23,21 +23,6 @@ function cargarVideos() {
         });
 }
 
-// Función para generar el selector de tipos de video
-/*
-function generarSelector(videos) {
-    const videoTypes = [...new Set(videos.map(video => video.tipus))]; // Extraer tipos únicos
-    const selectElement = document.getElementById('video-type');
-
-    videoTypes.forEach(type => {
-        const option = document.createElement('option');
-        option.value = type;
-        option.innerText = type; // Muestra el tipo como texto
-        selectElement.appendChild(option);
-    });
-        document.getElementById('video-type').value = "Vocaloid Party";
-}
-*/
 
 function generarSelector(videos) {
     const videoTypes = [...new Set(videos.map(video => video.tipus))]; // Extraer tipos únicos
@@ -57,7 +42,7 @@ function generarSelector(videos) {
         const option = document.createElement('option');
         option.value = type;
         option.innerText = type; // Muestra el tipo como texto
-        
+
         // Marcar "Vocaloid Party" como preseleccionado
         if (type === "Vocaloid Party") {
             option.selected = true; // Marcar como seleccionado
@@ -66,8 +51,8 @@ function generarSelector(videos) {
         selectElement.appendChild(option);
     });
 
-    // Filtrar videos por el tipo seleccionado
-    filtrarVideosPorTipo(selectElement.value, videos); // Filtrar directamente por el valor preseleccionado
+    // Filtrar videos por el tipo preseleccionado ("Vocaloid Party")
+    filtrarVideosPorTipo("Vocaloid Party", videos); // Filtrar directamente por el valor preseleccionado
 }
 
 // Función para filtrar videos según el tipo seleccionado
@@ -82,6 +67,10 @@ function filtrarVideosPorTipo(tipoSeleccionado, videos) {
 document.getElementById('video-type').addEventListener('change', (event) => {
     filtrarVideosPorTipo(event.target.value, videos); // Asegúrate de que 'videos' esté accesible aquí
 });
+
+
+
+
 
 
 // Función para generar los videos en la página
