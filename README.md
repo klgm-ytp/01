@@ -1,6 +1,10 @@
 
 # 01 (resum)
 
-Com github no permet executar res a backend, per la versió premium d'aquest software una de les coses que caldrà és un protocol d'acceptació tipus imk (id, mètode i clau) com a pas previ per tota mena de contingut creat al backend en tots dos sentits. 
+Aquest primer projecte meu a github consisteix a una millora personalitzada del sistema de preferits, en primer lloc de youtube
 
-La web que es farà aquí pretén ser una millora dels preferits que ja permet fer youtube per a les meves necessitats. Es mirarà de fer creuament de dades, que els visitants puguin afegir dades i puguin ser públiques o privades, que les pugui administrar, que es pugui ordenar de moltes formes, que es pugui consultar coses usant tècniques webscrapping contra altres webs, etc etc.
+Per a gestionar l'informació continguda en aquest sistema sense haver d'entrar com a master del projecte i editar manualment un arxiu json (o com sigui) tinc pendent implementar un mètode de connexiò ( multi-protocol, per exemple del tipus "id, clau, mètode" ) ja que github no permet escriure de forma programàtica per la seva seguretat.
+
+Acabada una primera etapa on jo pugui gestionar els meus preferits de youtube en connexió amb un servidor extern per a dades variables centralitzades, miraré de fer creuament de dades i que altres usuaris puguin gestionar dades tant públiques o privades.
+
+A una tercera etapa, coses no tant urgents com ordenar de moltes formes (no solament una classificació senzilla si no basada a un patró de classificació per exemple amb bits de pertanyer a varies classes), fer cerques, que es pugui consultar coses usant tècniques webscrapping contra altres webs, que una mena de "cron" faci coses, connectar-se amb IA, etc etc.
