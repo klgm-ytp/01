@@ -64,24 +64,29 @@ iframe {
 
 /* Ajusta el tamaño del video (mitad de tamaño) */
 .video-container iframe {
-    width: 250px;  /* Mitad del ancho */
-    height: 150px; /* Mitad de la altura */
+    width: 125px;  /* Mitad del ancho */
+    height: 75px; /* Mitad de la altura */
 }
 
 /* El contenedor del resumen a la derecha */
 .summary-container {
     width: 300px;  /* Ajusta el tamaño para el texto a la derecha */
     margin-left: 20px; /* Espacio entre el video y el texto */
-    align-self: flex-start; /* Alinea el texto en la parte superior */
+}
+
+/* Asegurar que el contenido del texto empiece desde la parte superior */
+.summary-container p {
+    margin: 0; /* Elimina márgenes adicionales en el párrafo */
+    padding: 0; /* Asegura que el texto esté alineado correctamente */
 }
 
 /* Separador entre los videos */
 hr {
-    visible: no;
     width: 100%;
     border: 1px solid #ccc;
     margin: 20px 0; /* Espacio alrededor del separador */
 }
+
 
 
 /* afegit final */
