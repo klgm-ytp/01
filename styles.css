@@ -49,6 +49,44 @@ iframe {
     background-color: #45a049;
 }
 
+
+
+
+/* afegit inici */
+
+/* Estilo para el contenedor del video y el resumen */
+.video-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Espacio entre videos */
+}
+
+/* Ajusta el tamaño del video */
+.video-container iframe {
+    width: 500px;  /* Ajusta el ancho del video como necesites */
+    height: 300px; /* Ajusta la altura del video como necesites */
+}
+
+/* El contenedor del resumen a la derecha */
+.summary-container {
+    width: 300px;  /* Ajusta el tamaño para el texto a la derecha */
+    margin-left: 20px; /* Espacio entre el video y el texto */
+}
+
+/* Separador entre los videos */
+hr {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin: 20px 0; /* Espacio alrededor del separador */
+}
+
+/* afegit final */
+
+
+
+
+
 .comment-section {
     margin-top: 40px;
     text-align: center;
