@@ -1,3 +1,6 @@
+// tot això ho he de resumir però en realitat en aquest arxiu hi ha d'haver la part de scripts.js que 
+// va d'aquest tema (no he d'esborrar l'arxiu encara que és greu que no es pugui esborrar)
+
 // el petit defecte que té email.js és que en realitat no es pot usar perquè un gamberro por usar 
 // la teva api key però potser hi ha alguna cosa que encara no sé sobre ell, així i tot m'agrada i 
 // l'estic usant en aquest petit projecte fins que un gamberro l'usi per a consumir els meus 200 mails 
