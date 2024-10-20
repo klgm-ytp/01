@@ -70,8 +70,8 @@ iframe {
 
 /* El contenedor del resumen a la derecha */
 .summary-container {
-    width: 300px;  /* Ajusta el tamaño para el texto a la derecha */
-    margin-left: 20px; /* Espacio entre el video y el texto */
+    width: 500px;  /* Ajusta el tamaño para el texto a la derecha */
+    margin-left: 10px; /* Espacio entre el video y el texto */
 }
 
 /* Asegurar que el contenido del texto empiece desde la parte superior */
