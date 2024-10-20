@@ -38,6 +38,7 @@ function generarSelector(videos) {
         document.getElementById('video-type').value = "Vocaloid Party";
 }
 */
+
 function generarSelector(videos) {
     const videoTypes = [...new Set(videos.map(video => video.tipus))]; // Extraer tipos únicos
     const selectElement = document.getElementById('video-type');
@@ -45,7 +46,7 @@ function generarSelector(videos) {
     // Limpiar opciones existentes
     selectElement.innerHTML = '';
 
-    // Agregar opción "Todos" (puedes mantenerla si lo deseas)
+    // Agregar opción "Todos"
     const optionTodos = document.createElement('option');
     optionTodos.value = 'todos';
     optionTodos.innerText = 'Todos';
@@ -56,14 +57,17 @@ function generarSelector(videos) {
         const option = document.createElement('option');
         option.value = type;
         option.innerText = type; // Muestra el tipo como texto
+        
+        // Marcar "Vocaloid Party" como preseleccionado
+        if (type === "Vocaloid Party") {
+            option.selected = true; // Marcar como seleccionado
+        }
+
         selectElement.appendChild(option);
     });
 
-    // Preseleccionar "Vocaloid Party"
-    selectElement.value = "Vocaloid Party"; // Cambia a "Vocaloid Party"
-
-    // Filtrar videos por el tipo seleccionado al cargar
-    filtrarVideosPorTipo(selectElement.value, videos); // Cambia esto para usar el valor seleccionado
+    // Filtrar videos por el tipo seleccionado
+    filtrarVideosPorTipo(selectElement.value, videos); // Filtrar directamente por el valor preseleccionado
 }
 
 // Función para filtrar videos según el tipo seleccionado
@@ -78,6 +82,7 @@ function filtrarVideosPorTipo(tipoSeleccionado, videos) {
 document.getElementById('video-type').addEventListener('change', (event) => {
     filtrarVideosPorTipo(event.target.value, videos); // Asegúrate de que 'videos' esté accesible aquí
 });
+
 
 // Función para generar los videos en la página
 function generarVideos(videos) {
