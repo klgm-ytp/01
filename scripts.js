@@ -23,6 +23,50 @@ function cargarVideos() {
         });
 }
 
+function generarSelector(videos) {
+    const videoTypes = [...new Set(videos.map(video => video.tipus))]; // Extraer tipos únicos
+    const selectElement = document.getElementById('video-type');
+
+    // Limpiar opciones existentes
+    selectElement.innerHTML = '';
+
+    // Agregar opción "Todos"
+    const optionTodos = document.createElement('option');
+    optionTodos.value = 'todos';
+    optionTodos.innerText = 'Todos';
+    selectElement.appendChild(optionTodos);
+
+    // Agregar opciones de tipos desde el JSON
+    videoTypes.forEach(type => {
+        const option = document.createElement('option');
+        option.value = type;
+        option.innerText = type; // Muestra el tipo como texto
+
+        // Marcar "Vocaloid Party" como preseleccionado
+        if (type === "Vocaloid Party") {
+            option.selected = true; // Marcar como seleccionado
+        }
+
+        selectElement.appendChild(option);
+    });
+
+    // Filtrar videos por el tipo preseleccionado (Vocaloid Party o el valor predefinido)
+    const tipoPreseleccionado = selectElement.value === 'todos' ? 'Vocaloid Party' : selectElement.value;
+    filtrarVideosPorTipo(tipoPreseleccionado, videos); // Filtrar directamente por el valor preseleccionado
+}
+
+// Función para filtrar videos según el tipo seleccionado
+function filtrarVideosPorTipo(tipoSeleccionado, videos) {
+    const container = document.getElementById('video-list');
+    container.innerHTML = ''; // Limpiar lista existente
+    const filteredVideos = tipoSeleccionado === 'todos' ? videos : videos.filter(video => video.tipus === tipoSeleccionado);
+    generarVideos(filteredVideos); // Mostrar los videos filtrados
+}
+
+// Añadir el evento de cambio al selector para filtrar los videos dinámicamente
+document.getElementById('video-type').addEventListener('change', (event) => {
+    filtrarVideosPorTipo(event.target.value, videos); // Asegúrate de que 'videos' esté accesible aquí
+});
 
 function generarSelector(videos) {
     const videoTypes = [...new Set(videos.map(video => video.tipus))]; // Extraer tipos únicos
