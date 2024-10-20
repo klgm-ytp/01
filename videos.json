@@ -60,5 +60,10 @@
       "resumen" : "origen del logo de Discord?",
       "tipus" : "vocaloid"
     },    
+    {
+      "url" : "https://www.youtube.com/embed/PqJNc9KVIZE", 
+      "resumen" : "Un clàssic, potser el 'hello world' de Vocaloid",
+      "tipus" : "vocaloid"
+    } 
   ]
 }
