@@ -47,8 +47,18 @@
     },
     {
       "url" : "https://www.youtube.com/embed/yM0_0oSdwc8",
-      "reumen" : "Escape segona part",
+      "resumen" : "Escape segona part",
       "tipus" : "vocaloid"
-    }
+    },
+    {
+      "url" : "https://www.youtube.com/embed/243vPl8HdVk", 
+      "resumen" : "Redial",
+      "tipus" : "vocaloid"
+    },
+    {
+      "url" : "https://www.youtube.com/embed/zkLJoFp2UAE", 
+      "resumen" : "origen del logo de Discord?",
+      "tipus" : "vocaloid"
+    },    
   ]
 }
