@@ -5,18 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pàgina de Videos</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+    .clar {
+        font-family:arial;
+        font-size:13px;
+    }
+    </style>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
 <blockquote>
     <h1>Links amb arbres i comentaris</h1>
-    <h2>v0.08 : Pendent: ordenar per medis i temes amb varis arbres de sel·lecció</h2>
+    <h2>v0.09 : Pendent: ordenar per medis i temes amb varis arbres de sel·lecció</h2>
     <hr>
+    <div class=clar>
     <label for="video-type">Selecciona el tipo de video:</label>  
-    <select id="video-type" style="font-family:arial;font-size:13px;">
+    <select id="video-type" >
        <option value="">Todos</option>
        <!-- Las opciones se agregarán aquí dinámicamente -->
     </select>
+    </div>
     <hr>
     <br>
     <div id="video-list" class="container"></div>
