@@ -18,7 +18,7 @@ body {
 }
 
 .video-container, .summary-container {
-    width: 100%; /* Cada contenedor ocupa el 100% del ancho dentro de su margen */
+    width: 50%; /* Cada contenedor ocupa el 50% del ancho dentro de su margen */
     margin-bottom: 20px;
 }
 
