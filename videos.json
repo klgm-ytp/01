@@ -72,17 +72,22 @@
     },
     {
       "url" : "https://www.youtube.com/embed/u_QS0sjg6YU",
-      "resumen" : "Aquest és un show 2015 de 39 minuts (39 = san kyuu = thank you)",
+      "resumen" : "Aquest és un show 2015 de 39 minuts",
       "tipus" : "Vocaloid Party"
     },
     {
       "url" : "https://www.youtube.com/embed/7fyDbWTF-4g",
-      "resumen" : "Nico nico cho party 2016 de 39 minuts",
+      "resumen" : "Nico nico cho party 2016 de 39 minuts (39 = san kyuu = thank you)",
       "tipus" : "Vocaloid Party"
     },
     {
+      "url" : "https://www.youtube.com/embed/ozZKmgYfk30",
+      "resumen" : "Nico nico cho party 2018 amb subtítles russos",
+      "tipus" : "Vocaloid Party"
+    },    
+    {
       "url" : "https://www.youtube.com/embed/dNn7raI-ph4",
-      "resumen" : "Nico nico cho party 2022 de 39 minuts comprimida un 5% en temps amb subtítles russos naturalment",
+      "resumen" : "Nico nico cho party 2022 comprimida 5% (en temps potser) amb subtítles russos",
       "tipus" : "Vocaloid Party"
     }
   ]
