@@ -60,6 +60,8 @@ function filtrarVideosPorTipo(tipoSeleccionado, videos) {
     generarVideos(filteredVideos);
 }
 
+/*
+
 // Función para generar los videos en la página
 function generarVideos(videos) {
     const container = document.getElementById('video-list');
@@ -89,18 +91,44 @@ function generarVideos(videos) {
     });
 }
 
-// Función para enviar el comentario
-function enviarComentario() {
-    const comment = document.getElementById('user-comment').value;
-    if (comment.trim() === "") { alert("Escriu un comentari"); return; }
-    const templateParams = { message: comment, from_name: "perico de los palotes", };
-    emailjs.send('gmailpersonal', 'template_76kgfyr', templateParams)
-        .then(function(response) {
-            alert("Comentari enviat!");
-            document.getElementById('user-comment').value = ""; // Limpiar campo de texto
-        }, function(error) {
-            alert("Error.");
-        }); // service id, template id
+*/
+
+function generarVideos(videos) {
+    const container = document.getElementById('video-list');
+    container.innerHTML = ''; // Limpiar el contenedor antes de agregar nuevos videos
+
+    videos.forEach((video) => {
+        const videoItem = document.createElement('div');
+        videoItem.className = 'video-item'; // Añadido para estilos en CSS
+
+        // Contenedor de video
+        const videoContainer = document.createElement('div');
+        videoContainer.className = 'video-container';
+
+        const videoFrame = document.createElement('iframe');
+        videoFrame.src = video.url;
+        videoFrame.setAttribute('frameborder', '0');
+        videoFrame.setAttribute('allowfullscreen', '');
+        videoContainer.appendChild(videoFrame);
+
+        // Contenedor del resumen
+        const summaryContainer = document.createElement('div');
+        summaryContainer.className = 'summary-container';
+        const paragraph = document.createElement('p');
+        paragraph.innerText = video.resumen;
+        summaryContainer.appendChild(paragraph);
+
+        // Agregar el video y el resumen en la misma fila
+        videoItem.appendChild(videoContainer);
+        videoItem.appendChild(summaryContainer);
+
+        // Agregar el videoItem al contenedor principal
+        container.appendChild(videoItem);
+
+        // Agregar un separador <hr> entre videos
+        const separador = document.createElement('hr');
+        container.appendChild(separador);
+    });
 }
 
 // Ejecutar las funciones cuando la página esté cargada
