@@ -1,3 +1,8 @@
+// el petit defecte que té email.js és que en realitat no es pot usar perquè un gamberro por usar 
+// la teva api key però potser hi ha alguna cosa que encara no sé sobre ell, així i tot m'agrada i 
+// l'estic usant en aquest petit projecte fins que un gamberro l'usi per a consumir els meus 200 mails 
+//  mensuals en un segon (els rebré tots jo així que solament pot ser un gamberro)
+//
 // aquí hi havia email.js, per a mirar de solucionar el problema de la no existencia del seu cdn
 // però en realitat el seu cdn de moment funciona pel que no hi ha cap necessitat d'usar email.js
 //
