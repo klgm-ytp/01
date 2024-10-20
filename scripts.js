@@ -84,4 +84,5 @@ window.onload = function() {
     emailjs.init("6fA2OytynKI7ROlMU");
     cargarVideos(); // Cargar los videos desde el JSON
     document.getElementById('send-comment').addEventListener('click', enviarComentario);
+    document.getElementById('video-type').value = "Vocaloid Party";
 };
