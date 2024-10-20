@@ -9,7 +9,7 @@ body {
 
 /* Contenedor general con márgenes laterales */
 .container {
-    width: 30%;
+    width: 50%;
     margin: 0 auto; /* Centra el contenido horizontalmente */
     padding-bottom: 40px;
     display: flex;
@@ -24,7 +24,7 @@ body {
 
 iframe {
     width: 100%;
-    height: 300px;
+    height: 250px;
 }
 
 .button-container {
@@ -70,7 +70,7 @@ iframe {
 
 /* El contenedor del resumen a la derecha */
 .summary-container {
-    width: 500px;  /* Ajusta el tamaño para el texto a la derecha */
+    width: 400px;  /* Ajusta el tamaño para el texto a la derecha */
     margin-left: 10px; /* Espacio entre el video y el texto */
 }
 
