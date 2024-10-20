@@ -42,7 +42,12 @@
     },
     {
       "url" : "https://www.youtube.com/embed/0u_AQGt6dnE",
-      "resumen" : "Escape",
+      "resumen" : "Escape primera part",
       "tipus" : "vocaloid" 
+    },
+    {
+      "url" : "https://www.youtube.com/embed/yM0_0oSdwc8",
+      "reumen" : "Escape segona part",
+      "tipus" : "vocaloid"
     }
   ]
