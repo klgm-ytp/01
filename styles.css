@@ -64,8 +64,8 @@ iframe {
 
 /* Ajusta el tamaño del video (mitad de tamaño) */
 .video-container iframe {
-    width: 125px;  /* Mitad del ancho */
-    height: 75px; /* Mitad de la altura */
+    width: 200px;  /* Mitad del ancho */
+    height: 120px; /* Mitad de la altura */
 }
 
 /* El contenedor del resumen a la derecha */
