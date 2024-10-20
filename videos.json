@@ -2,15 +2,47 @@
   "videos": [
     {
       "url": "https://www.youtube.com/embed/FQkjIw8u3rU",
-      "resumen": "Experiments de 1993 i 2001 mostren que preferim patir més o gaudir menys perquè oblidem les duracions i recordem solament coses puntuals. Ignorem el que podem deduir i adaptem idees al que creiem que és normal i no sempre ho és..."
+      "resumen": "Experiments de 1993 i 2001 mostren que preferim patir més o gaudir menys perquè oblidem les duracions i recordem solament coses puntuals. Ignorem el que podem deduir i adaptem idees al que creiem que és normal i no sempre ho és...",
+      "tipus" : "ciència"
     },
     {
       "url": "https://www.youtube.com/embed/MykPPXHShzs",
-      "resumen": "Molta informació (1200 anys) en 30 minuts però diu coses fonamentals poc conegudes. El títol del vídeo no té sentit però el contingut és bó."
+      "resumen": "Molta informació (1200 anys) en 30 minuts però diu coses fonamentals poc conegudes. El títol del vídeo no té sentit però el contingut és bó.",
+      "tipus" : "història"
     },
     {
       "url" : "https://www.youtube.com/embed/EVvkZIF_jr8",
-      "resumen" : "S'interpreta part del contingut de mates d'un video d'animació."
+      "resumen" : "S'interpreta part del contingut de mates d'un video d'animació.",
+      "tipus" : "animació"
+    },
+    {
+      "url" : "https://www.youtube.com/embed/NocXEwsJGOQ",
+      "resumen" : "Un exemple de j-pop més musical que visual. Si el que volies era una pantalla fosca (per una festa) no li falta res...",
+      "tipus" : "vocaloid"
+    },
+    {
+      "url" : "https://www.youtube.com/embed/8kX5_69sO8Q",
+      "resumen" : "Tant visual com musical d'impepinable atractiu",
+      "tipus" : "vocaloid"
+    }, 
+    {
+      "url" : "https://www.youtube.com/embed/l69v6SVoE9k",
+      "resumen" : "Aquest és narratiu-musical",
+      "tipus" : "vocaloid"
+    },
+    {
+      "url" : "https://www.youtube.com/watch?v=p53KeRZq3jk",
+      "resumen" : "Cosmològic #1",
+      "tipus" : "vocaloid"    
+    },
+    {
+      "url" : "https://www.youtube.com/watch?v=jZjONCvSjr0",
+      "resumen" : "gift nor art",
+      "tipus" : "vocaloid" 
+    },
+    {
+      "https://www.youtube.com/watch?v=0u_AQGt6dnE",
+      "resumen" : "Escape",
+      "tipus" : "vocaloid" 
     }
   ]
-}
