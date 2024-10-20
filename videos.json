@@ -62,8 +62,13 @@
     },    
     {
       "url" : "https://www.youtube.com/embed/PqJNc9KVIZE", 
-      "resumen" : "Un clàssic, potser el 'hello world' de Vocaloid",
+      "resumen" : "Si existís un tutorial de Vocaloid, pel seu nom, poser seria el 'hello world' de Vocaloid",
       "tipus" : "vocaloid"
-    } 
+    }, 
+    {
+      "url" : "https://www.youtube.com/embed/y_g4zbwWG_I",
+      "resumen" : "Musical i també visual si vols una imatge parada i no animació",
+      "tipus" : "vocaloid"
+    }
   ]
 }
