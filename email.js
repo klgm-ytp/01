@@ -1,5 +1,18 @@
-// tot això ho he de resumir però en realitat en aquest arxiu hi ha d'haver la part de scripts.js que 
-// va d'aquest tema (no he d'esborrar l'arxiu encara que és greu que no es pugui esborrar)
+// Función para enviar el comentario
+function enviarComentario() {
+    const comment = document.getElementById('user-comment').value;
+    if (comment.trim() === "") { alert("Escriu un comentari"); return; }
+    const templateParams = { message: comment, from_name: "perico de los palotes", };
+    emailjs.send('gmailpersonal', 'template_76kgfyr', templateParams)
+        .then(function(response) {
+            alert("Comentari enviat!");
+            document.getElementById('user-comment').value = ""; // Limpiar campo de texto
+        }, function(error) {
+            alert("Error.");
+        }); // service id, template id
+}
+
+// tot això ho he de resumir i posar a part
 
 // el petit defecte que té email.js és que en realitat no es pot usar perquè un gamberro por usar 
 // la teva api key però potser hi ha alguna cosa que encara no sé sobre ell, així i tot m'agrada i 
