@@ -61,9 +61,9 @@ function generarSelector(videos) {
 
     // Preseleccionar "Vocaloid Party"
     selectElement.value = "Vocaloid Party"; // Cambia a "Vocaloid Party"
-    
+
     // Filtrar videos por el tipo seleccionado al cargar
-    filtrarVideosPorTipo("Vocaloid Party", videos);
+    filtrarVideosPorTipo(selectElement.value, videos); // Cambia esto para usar el valor seleccionado
 }
 
 // Función para filtrar videos según el tipo seleccionado
@@ -74,6 +74,10 @@ function filtrarVideosPorTipo(tipoSeleccionado, videos) {
     generarVideos(filteredVideos); // Mostrar los videos filtrados
 }
 
+// Añadir el evento de cambio al selector para filtrar los videos dinámicamente
+document.getElementById('video-type').addEventListener('change', (event) => {
+    filtrarVideosPorTipo(event.target.value, videos); // Asegúrate de que 'videos' esté accesible aquí
+});
 
 // Función para generar los videos en la página
 function generarVideos(videos) {
