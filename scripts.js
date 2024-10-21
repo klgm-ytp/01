@@ -24,7 +24,8 @@ function cargarVideos() {
 }
 
 function generarSelector(videos) {
-    const videoTypes = [...new Set(videos.map(video => video.tipus))];
+//    const videoTypes = [...new Set(videos.map(video => video.tipus))];
+    const videoTypes = [...new Set(videos.map(video => video.tipus))].sort();
     const selectElement = document.getElementById('video-type');
     
     // Limpiar opciones existentes
@@ -59,39 +60,6 @@ function filtrarVideosPorTipo(tipoSeleccionado, videos) {
         : videos.filter(video => video.tipus === tipoSeleccionado);
     generarVideos(filteredVideos);
 }
-
-/*
-
-// Función para generar los videos en la página
-function generarVideos(videos) {
-    const container = document.getElementById('video-list');
-    container.innerHTML = ''; // Limpiar el contenedor antes de agregar nuevos videos
-
-    videos.forEach((video) => {
-        const videoContainer = document.createElement('div');
-        videoContainer.className = 'video-container';
-
-        const videoFrame = document.createElement('iframe');
-        videoFrame.src = video.url;
-        videoFrame.setAttribute('frameborder', '0');
-        videoFrame.setAttribute('allowfullscreen', '');
-        videoContainer.appendChild(videoFrame);
-
-        const summaryContainer = document.createElement('div');
-        summaryContainer.className = 'summary-container';
-        const paragraph = document.createElement('p');
-        paragraph.innerText = video.resumen;
-        summaryContainer.appendChild(paragraph);
-
-        container.appendChild(videoContainer);
-        container.appendChild(summaryContainer);
-
-        const separador = document.createElement('hr');
-        container.appendChild(separador);
-    });
-}
-
-*/
 
 function generarVideos(videos) {
     const container = document.getElementById('video-list');
