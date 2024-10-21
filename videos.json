@@ -3,7 +3,7 @@
     {
       "url": "https://www.youtube.com/embed/FQkjIw8u3rU",
       "resumen": "Experiments de 1993 i 2001 mostren que preferim patir més o gaudir menys perquè oblidem les duracions i recordem solament coses puntuals. Ignorem el que podem deduir i adaptem idees al que creiem que és normal i no sempre ho és...",
-      "tipus" : "Ciència"
+      "tipus" : "Veritasium"
     },
     {
       "url": "https://www.youtube.com/embed/MykPPXHShzs",
@@ -89,7 +89,16 @@
       "url" : "https://www.youtube.com/embed/dNn7raI-ph4",
       "resumen" : "Nico nico cho party 2022 comprimida 5% (en temps potser) amb subtítles russos",
       "tipus" : "Vocaloid Party"
-    }
+    },
+    {
+    "url" : "https://www.youtube.com/embed/NtiK6DV2RcA",
+    "resum" : "Fonaments històrics de les llengues i el gentilici àrabs",
+    "tipus" : "Idiomes"
+    },
+    {
+      "url": "https://www.youtube.com/embed/4XTkiudd-_E",
+      "resumen": "Sobre els codis QR, origen i fonaments.",
+      "tipus" : "Veritasium"
+    }    
   ]
 }
-
