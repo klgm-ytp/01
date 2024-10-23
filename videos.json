@@ -150,9 +150,9 @@
     {
       "medi" : "ChatGPT",
       "autor" : "joanignasi",
-/*      "url": "https://chatgpt.com/share/67189fab-0718-8008-9d74-5ea6b5fe9c68", */
+      "comentari": "https://chatgpt.com/share/67189fab-0718-8008-9d74-5ea6b5fe9c68 <---- aquest era el link correcte", 
       "url": "https://www.youtube.com/embed/uA2JysL5Yso",
-      "resumen": "PENDENT ARREGLAR REGISTRE - De la lingüística a la política colonial d'Occident a Orient",
+      "resumen": "PENDENT ARREGLAR AQUEST REGISTRE - De la lingüística a la política colonial d'Occident a Orient",
       "tipus" : "Idiomes"
     } ,
     {
