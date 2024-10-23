@@ -1,3 +1,10 @@
+/*  
+PENDENT: 
+1 : arreglar arbre per a que surti bé un menú ramificat (Aques codi el guardo per seguretat)
+2 : afegir filtre per a que els links de tipus ChatGPT siguin el segon tipus de dada diferent (Afegint també un select option amb YouTube/ChatGPT)
+3 : començar a usar bé git amb branches per a evitar haver de guardar el codi segur comentat com he fet ara
+*/
+
 /*
 
 // Función para cargar el JSON y generar los videos
