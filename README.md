@@ -4,7 +4,7 @@
 Això hauria d'arribar a ser una millora personalitzada multiusuari del sistema de preferits. Ja ho és per a un sol usuari per tenir filtres. Si no són bons els sistemes de preferits actuals potser sigui perquè no ho he mirat i n'hi ha de bons però al menys no són gens bons els que porten els navigadors.
 
 Etapes (no per ordre):
-
+<pre>
 [x] 1. Filtrat bàsic (aconseguit) 
 [ ] 2. Filtrat amb arbre (útil si la llista es fa massa llarga) alternatiu
 [ ] 3. us insegur d'un servidor extern per dades centralitzades
@@ -20,3 +20,4 @@ Etapes (no per ordre):
 [ ] 13. API
 [ ] 14. Cosa similar a cron que executa processos que operen amb la API
 [ ] 15. projecte de popularització (seo i sponsors)
+</pre>
