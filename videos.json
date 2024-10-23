@@ -1,6 +1,7 @@
 {
   "videos": [
     {
+      "codi" : "1",
       "medi" : "YT",
       "autor" : "pendent",
       "url": "https://www.youtube.com/embed/FQkjIw8u3rU",
@@ -8,6 +9,7 @@
       "tipus" : "Veritasium"
     },
     {
+      "codi" : "2",
       "medi" : "YT",
       "autor" : "pendent",
       "url": "https://www.youtube.com/embed/MykPPXHShzs",
@@ -15,6 +17,7 @@
       "tipus" : "Història"
     },
     {
+      "codi" : "3",
       "medi" : "YT",
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/EVvkZIF_jr8",
@@ -22,6 +25,7 @@
       "tipus" : "Animació no tipus anime"
     },
     {
+      "codi" : "4",
       "medi" : "YT",
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/NocXEwsJGOQ",
@@ -29,6 +33,7 @@
       "tipus" : "Vocaloid poc moviment"
     },
     {
+      "codi" : "5",
       "medi" : "YT",
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/8kX5_69sO8Q",
@@ -36,6 +41,7 @@
       "tipus" : "Vocaloid"
     }, 
     {
+      "codi" : "6",
       "medi" : "YT",
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/l69v6SVoE9k",
@@ -43,6 +49,7 @@
       "tipus" : "Vocaloid còmic"
     },
     {
+      "codi" : "7",
       "medi" : "YT",
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/p53KeRZq3jk",
@@ -50,6 +57,7 @@
       "tipus" : "Vocaloid SciFi"    
     },
     {
+      "codi" : "8",
       "medi" : "YT",
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/jZjONCvSjr0",
@@ -57,6 +65,7 @@
       "tipus" : "Vocaloid SciFi" 
     },
     {
+      "codi" : "9",
       "medi" : "YT",
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/0u_AQGt6dnE",
@@ -64,6 +73,7 @@
       "tipus" : "Vocaloid SciFi" 
     },
     {
+      "codi" : "10",
       "medi" : "YT",
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/yM0_0oSdwc8",
@@ -71,6 +81,7 @@
       "tipus" : "Vocaloid SciFi"
     },
     {
+      "codi" : "11",
       "medi" : "YT",
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/243vPl8HdVk", 
@@ -78,6 +89,7 @@
       "tipus" : "Vocaloid"
     },
     {
+      "codi" : "12",
       "medi" : "YT",
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/zkLJoFp2UAE", 
@@ -85,6 +97,7 @@
       "tipus" : "Vocaloid"
     },    
     {
+      "codi" : "13",
       "medi" : "YT",
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/PqJNc9KVIZE", 
@@ -92,6 +105,7 @@
       "tipus" : "Vocaloid"
     }, 
     {
+      "codi" : "14",
       "medi" : "YT",
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/y_g4zbwWG_I",
@@ -99,6 +113,7 @@
       "tipus" : "Vocaloid poc moviment"
     },
     {
+      "codi" : "15",
       "medi" : "YT",
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/u_QS0sjg6YU",
@@ -106,6 +121,7 @@
       "tipus" : "Vocaloid Party"
     },
     {
+      "codi" : "16",
       "medi" : "YT",
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/7fyDbWTF-4g",
@@ -113,6 +129,7 @@
       "tipus" : "Vocaloid Party"
     },
     {
+      "codi" : "17",
       "medi" : "YT",
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/ozZKmgYfk30",
@@ -120,6 +137,7 @@
       "tipus" : "Vocaloid Party"
     },    
     {
+      "codi" : "18",
       "medi" : "YT",
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/dNn7raI-ph4",
@@ -127,6 +145,7 @@
       "tipus" : "Vocaloid Party"
     },
     {
+      "codi" : "19",
       "medi" : "YT",
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/NtiK6DV2RcA",
@@ -134,6 +153,7 @@
       "tipus" : "Idiomes"
     },
     {
+      "codi" : "20",
       "medi" : "YT",
       "autor" : "pendent",
       "url": "https://www.youtube.com/embed/4XTkiudd-_E",
@@ -141,6 +161,7 @@
       "tipus" : "Veritasium"
     },    
     {
+      "codi" : "21",
       "medi" : "YT",
       "autor" : "pendent",
       "url": "https://www.youtube.com/embed/dK6FCzqAiwI",
@@ -148,14 +169,16 @@
       "tipus" : "Idiomes"
     } ,
     {
+      "codi" : "22",
       "medi" : "ChatGPT",
       "autor" : "joanignasi",
-      "comentari": "https://chatgpt.com/share/67189fab-0718-8008-9d74-5ea6b5fe9c68 <---- aquest era el link correcte", 
+      "comentari extra": "https://chatgpt.com/share/67189fab-0718-8008-9d74-5ea6b5fe9c68 <---- aquest era el link correcte", 
       "url": "https://www.youtube.com/embed/uA2JysL5Yso",
       "resumen": "PENDENT ARREGLAR AQUEST REGISTRE - De la lingüística a la política colonial d'Occident a Orient",
       "tipus" : "Idiomes"
     } ,
     {
+      "codi" : "23",
       "medi" : "YT",
       "autor" : "Linguriosa",
       "url": "https://www.youtube.com/embed/uA2JysL5Yso",
