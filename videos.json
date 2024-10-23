@@ -1,109 +1,158 @@
 {
   "videos": [
     {
+      "medi" : "YT",
+      "autor" : "pendent",
       "url": "https://www.youtube.com/embed/FQkjIw8u3rU",
       "resumen": "Experiments de 1993 i 2001 mostren que preferim patir més o gaudir menys perquè oblidem les duracions i recordem solament coses puntuals. Ignorem el que podem deduir i adaptem idees al que creiem que és normal i no sempre ho és...",
       "tipus" : "Veritasium"
     },
     {
+      "medi" : "YT",
+      "autor" : "pendent",
       "url": "https://www.youtube.com/embed/MykPPXHShzs",
       "resumen": "Molta informació (1200 anys) en 30 minuts però diu coses fonamentals poc conegudes. El títol del vídeo no té sentit però el contingut és bó.",
       "tipus" : "Història"
     },
     {
+      "medi" : "YT",
+      "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/EVvkZIF_jr8",
       "resumen" : "S'interpreta part del contingut de mates d'un video d'animació.",
       "tipus" : "Animació no tipus anime"
     },
     {
+      "medi" : "YT",
+      "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/NocXEwsJGOQ",
       "resumen" : "Un exemple de j-pop més musical que visual. Si el que volies era una pantalla fosca (per una festa) no li falta res...",
       "tipus" : "Vocaloid poc moviment"
     },
     {
+      "medi" : "YT",
+      "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/8kX5_69sO8Q",
       "resumen" : "Pendent comentar",
       "tipus" : "Vocaloid"
     }, 
     {
+      "medi" : "YT",
+      "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/l69v6SVoE9k",
       "resumen" : "Aquest és narratiu-musical",
       "tipus" : "Vocaloid còmic"
     },
     {
+      "medi" : "YT",
+      "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/p53KeRZq3jk",
       "resumen" : "Laniakea és un nom hawaià per un troç de cosmos on vivim",
       "tipus" : "Vocaloid SciFi"    
     },
     {
+      "medi" : "YT",
+      "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/jZjONCvSjr0",
       "resumen" : "gift nor art",
       "tipus" : "Vocaloid SciFi" 
     },
     {
+      "medi" : "YT",
+      "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/0u_AQGt6dnE",
       "resumen" : "Escape primera part",
       "tipus" : "Vocaloid SciFi" 
     },
     {
+      "medi" : "YT",
+      "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/yM0_0oSdwc8",
       "resumen" : "Escape segona part",
       "tipus" : "Vocaloid SciFi"
     },
     {
+      "medi" : "YT",
+      "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/243vPl8HdVk", 
       "resumen" : "Redial",
       "tipus" : "Vocaloid"
     },
     {
+      "medi" : "YT",
+      "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/zkLJoFp2UAE", 
       "resumen" : "origen del logo de Discord?",
       "tipus" : "Vocaloid"
     },    
     {
+      "medi" : "YT",
+      "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/PqJNc9KVIZE", 
       "resumen" : "Poser el 'hello world' de Vocaloid",
       "tipus" : "Vocaloid"
     }, 
     {
+      "medi" : "YT",
+      "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/y_g4zbwWG_I",
       "resumen" : "Pendent comentari",
       "tipus" : "Vocaloid poc moviment"
     },
     {
+      "medi" : "YT",
+      "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/u_QS0sjg6YU",
       "resumen" : "Aquest és un show 2015 de 39 minuts",
       "tipus" : "Vocaloid Party"
     },
     {
+      "medi" : "YT",
+      "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/7fyDbWTF-4g",
       "resumen" : "Nico nico cho party 2016 de 39 minuts (39 = san kyuu = thank you)",
       "tipus" : "Vocaloid Party"
     },
     {
+      "medi" : "YT",
+      "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/ozZKmgYfk30",
       "resumen" : "Nico nico cho party 2018 amb subtítles russos",
       "tipus" : "Vocaloid Party"
     },    
     {
+      "medi" : "YT",
+      "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/dNn7raI-ph4",
       "resumen" : "Nico nico cho party 2022 comprimida 5% (en temps potser) amb subtítles russos",
       "tipus" : "Vocaloid Party"
     },
     {
-    "url" : "https://www.youtube.com/embed/NtiK6DV2RcA",
-    "resumen" : "Fonaments històrics de les llengues i el gentilici àrabs",
-    "tipus" : "Idiomes"
+      "medi" : "YT",
+      "autor" : "pendent",
+      "url" : "https://www.youtube.com/embed/NtiK6DV2RcA",
+      "resumen" : "Fonaments històrics de les llengues i el gentilici àrabs",
+      "tipus" : "Idiomes"
     },
     {
+      "medi" : "YT",
+      "autor" : "pendent",
       "url": "https://www.youtube.com/embed/4XTkiudd-_E",
       "resumen": "Sobre els codis QR, origen i fonaments.",
       "tipus" : "Veritasium"
     },    
     {
+      "medi" : "YT",
+      "autor" : "pendent",
       "url": "https://www.youtube.com/embed/dK6FCzqAiwI",
       "resumen": "LangFocus té molts més videos bons.",
       "tipus" : "Idiomes"
-    }    
+    } ,
+    {
+      "medi" : "ChatGPT",
+      "autor" : "joanignasi",
+      "url": "https://chatgpt.com/share/67189fab-0718-8008-9d74-5ea6b5fe9c68",
+      "resumen": "De la lingüística a la política colonial d'Occident a Orient",
+      "tipus" : "Idiomes"
+    } 
   ]
 }
