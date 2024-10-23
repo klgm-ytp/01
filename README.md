@@ -1,10 +1,22 @@
 
-# 01 (resum)
+# 01 PREFERITS
 
-Aquest primer projecte meu a github consisteix a una millora personalitzada del sistema de preferits, en primer lloc de youtube
+Això hauria d'arribar a ser una millora personalitzada multiusuari del sistema de preferits. Ja ho és per a un sol usuari per tenir filtres. Si no són bons els sistemes de preferits actuals potser sigui perquè no ho he mirat i n'hi ha de bons però al menys no són gens bons els que porten els navigadors.
 
-Per a gestionar l'informació continguda en aquest sistema sense haver d'entrar com a master del projecte i editar manualment un arxiu json (o com sigui) tinc pendent implementar un mètode de connexiò ( multi-protocol, per exemple del tipus "id, clau, mètode" ) ja que github no permet escriure de forma programàtica per la seva seguretat.
+Etapes (no per ordre):
 
-Acabada una primera etapa on jo pugui gestionar els meus preferits de youtube en connexió amb un servidor extern per a dades variables centralitzades, miraré de fer creuament de dades i que altres usuaris puguin gestionar dades tant públiques o privades. La primera etapa també tindrà un apartat d'execució a servidor per si algú vol fer un fork d'aquest projecte ja pugui també apuntar al seu servidor aquesta informació actualitzada de preferits.
-
-A una tercera etapa, coses no tant urgents com ordenar de moltes formes (no solament una classificació senzilla si no basada a un patró de classificació per exemple amb bits de pertanyer a varies classes), fer cerques, que es pugui consultar coses usant tècniques webscrapping contra altres webs, que una mena de "cron" faci coses, connectar-se amb IA, fer tot multilingüe, mirar de vendre el projecte o al menys buscar sponsors, mirar de comprovar que si tens youtube de pago no veus anuncis, indexar també webs de video d'altre tipus, també webs que no són de video, etc etc.
+[x] 1. Filtrat bàsic (aconseguit) 
+[ ] 2. Filtrat amb arbre (útil si la llista es fa massa llarga) alternatiu
+[ ] 3. us insegur d'un servidor extern per dades centralitzades
+[ ] 4. 3. però amb una seguretat mínima  ( multi-protocol, del tipus "id, clau, mètode" ) 
+[ ] 5. 4. amb més seguretat (varis mètodes)
+[ ] 6. que també hi siguin tots els avantatges dels sistemes de preferits de, per exemple, chrome però també els altres
+[ ] 7. usar google translate per a tota l'estructura
+[ ] 8. sistema multiusuari, dades públiques, privades i mixtes, control de contingut administrador (aprovació de publicacions)
+[ ] 9. documentació per fer instalació del sistema etc
+[ ] 10. fonts: YouTube, ChatGPT, Webs, Cripto, Noticies i veure quins etcéteres si existeixen
+[ ] 11. multiple ordenació i filtrar múltiple, cerca per paraules
+[ ] 12. webscrappings diversos i detecció de novetats
+[ ] 13. API
+[ ] 14. Cosa similar a cron que executa processos que operen amb la API
+[ ] 15. projecte de popularització (seo i sponsors)
