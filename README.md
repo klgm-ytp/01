@@ -3,7 +3,7 @@
 
 Això hauria d'arribar a ser una millora personalitzada multiusuari del sistema de preferits. 
 Ja ho és per a un sol usuari per tenir filtres. Si no són bons els sistemes de preferits actuals 
-potser sigui perquè no ho he mirat i n'hi ha de bons però al menys no són gens bons els que 
+potser sigui perquè no ho he mirat i n'hi ha de bons però al menys no són gaire bons els que 
 porten els navigadors.
 
 Etapes (no per ordre):
