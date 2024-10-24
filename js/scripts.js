@@ -5,43 +5,31 @@ PENDENT:
 3 : començar a usar bé git amb branches per a evitar haver de guardar el codi segur comentat com he fet ara
 */
 
-// Función para cargar el JSON y generar videos, el selector y el menú desplegable de árbol
 function cargarVideos() {
     fetch('llista.json')
         .then(response => {
-            if (!response.ok) {
-                throw new Error('Error al cargar el archivo JSON');
-            }
+            if (!response.ok) { throw new Error('Error carregant JSON'); }
             return response.json();
         })
         .then(data => {
-            // Generar el selector tradicional
-            generarSelector(data.videos);
-
-            // Construir el árbol de tipos y generar el menú desplegable
+            generarSelector(data.videos); // el selector tradicional
             const arbolDeTipos = construirArbolDeTipos(data.videos);
             const menuContainer = document.getElementById('menu-arbol');
             menuContainer.innerHTML = ''; // Limpiar antes de agregar nuevo contenido
             generarMenuAcordeon(arbolDeTipos, menuContainer);
-
             // Agregar evento para el selector (filtrado tradicional)
             document.getElementById('video-type').addEventListener('change', function() {
                 const selectedType = this.value;
                 filtrarVideosPorTipo(selectedType, data.videos);
             });
         })
-        .catch(error => {
-            console.error('Error:', error);
-        });
+        .catch(error => { console.error('Error:', error); });
 }
 
-// generar el selector tradicional (dropdown) de tipos de video
 function generarSelector(videos) {
-    // Obtener todos los 'tipus' únicos completos sin dividir por palabras y ordenarlos
     const tiposUnicos = [...new Set(videos.map(video => video.tipus))].sort();  
     const selector = document.getElementById('video-type');
-    selector.innerHTML = ''; // Limpiar el selector antes de agregar opciones
-    // Agregar opción "Todos"
+    selector.innerHTML = ''; 
     const optionTodos = document.createElement('option');
     optionTodos.value = 'todos';
     optionTodos.innerText = 'Tots';
@@ -51,21 +39,18 @@ function generarSelector(videos) {
         const option = document.createElement('option');
         option.value = tipo;
         option.textContent = tipo;
-        // Preseleccionar "Vocaloid > Party"
-        if (tipo === "Vocaloid > Party") {
+        if (tipo === "Animació > Vocaloid > Party") {
             option.selected = true; // Preseleccionar "Animació > Vocaloid > Party"
         }
         selector.appendChild(option);
     });
-    // Filtrar inmediatamente por "Vocaloid > Party" si está presente
     filtrarVideosPorTipo("Vocaloid > Party", videos);
 }
 
-// construir el árbol a partir de los campos "tipus"
 function construirArbolDeTipos(videos) {
     const arbol = {};
     videos.forEach(video => {
-        const tipos = video.tipus.split(' > ');  // Usar un delimitador específico
+        const tipos = video.tipus.split(' > ');  // Usar delimitador específic
         let nodoActual = arbol;
         tipos.forEach(tipo => {
             if (!nodoActual[tipo]) {
