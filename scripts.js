@@ -92,11 +92,13 @@ function construirArbolDeTipos(videos) {
 function generarMenuAcordeon(arbol, container) {
     const ul = document.createElement('ul');
     container.appendChild(ul);
+    
     Object.keys(arbol).sort().forEach(key => { // Ordenar los tipos en el menú de árbol
         // Evitar mostrar el nodo _videos
         if (key !== '_videos') {
             const li = document.createElement('li');
             li.innerText = key;
+
             // Comprobar si hay videos asociados al tipo
             if (arbol[key]._videos && arbol[key]._videos.length > 0) {
                 // Si hay videos, agregar evento para filtrar
@@ -111,10 +113,12 @@ function generarMenuAcordeon(arbol, container) {
                     generarVideos([]); // Mostrar lista vacía
                 });
             }
+
             // Submenú
             const subContainer = document.createElement('div');
             subContainer.style.display = 'none'; // Iniciar oculto
             li.appendChild(subContainer);
+
             // Generar el subárbol si existen subtipos
             if (Object.keys(arbol[key]).length > 1) {
                 generarMenuAcordeon(arbol[key], subContainer);
@@ -128,15 +132,19 @@ function generarMenuAcordeon(arbol, container) {
                 });
                 subContainer.appendChild(subLi);
             }
+
             // Evento para alternar la visibilidad del submenú
             li.addEventListener('click', (event) => {
                 event.stopPropagation(); // Evitar que el clic se propague
+                // Alternar la visibilidad del submenú
                 subContainer.style.display = subContainer.style.display === 'none' ? 'block' : 'none';
             });
+
             ul.appendChild(li);
         }
     });
 }
+
 
 // Función para filtrar los videos por tipo seleccionado en el selector
 function filtrarVideosPorTipo(tipoSeleccionado, videos) {
