@@ -53,15 +53,20 @@ function generarSelector(videos) {
         const option = document.createElement('option');
         option.value = tipo;
         option.textContent = tipo;
-        if (tipo === "Vocaloid Party") {
-            option.selected = true; // Preseleccionar "Vocaloid Party"
+
+        // Preseleccionar "Vocaloid > Party"
+        if (tipo === "Vocaloid > Party") {
+            option.selected = true; // Preseleccionar "Vocaloid > Party"
         }
         selector.appendChild(option);
     });
 
-    // Filtrar inmediatamente por Vocaloid Party si está presente
+    // Filtrar inmediatamente por "Vocaloid > Party" si está presente
     filtrarVideosPorTipo("Vocaloid > Party", videos);
 }
+
+
+
 
 // Función para construir el árbol a partir de los campos "tipus"
 function construirArbolDeTipos(videos) {
