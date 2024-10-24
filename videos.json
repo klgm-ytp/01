@@ -28,7 +28,7 @@
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/EVvkZIF_jr8",
       "resumen" : "S'interpreta part del contingut de mates d'un video d'animació.",
-      "tipus" : "Animació no-anime"
+      "tipus" : "Animació > No anime"
     },
     {
       "codi" : "4",
@@ -38,7 +38,7 @@
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/NocXEwsJGOQ",
       "resumen" : "Un exemple de j-pop més musical que visual. Si el que volies era una pantalla fosca (per una festa) no li falta res...",
-      "tipus" : "Vocaloid no-moviment"
+      "tipus" : "Vocaloid > Poc moviment"
     },
     {
       "codi" : "5",
@@ -58,7 +58,7 @@
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/l69v6SVoE9k",
       "resumen" : "Aquest és narratiu-musical",
-      "tipus" : "Vocaloid còmic"
+      "tipus" : "Vocaloid > Còmic"
     },
     {
       "codi" : "7",
@@ -68,7 +68,7 @@
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/p53KeRZq3jk",
       "resumen" : "Laniakea és un nom hawaià per un troç de cosmos on vivim",
-      "tipus" : "Vocaloid SciFi"    
+      "tipus" : "Vocaloid > SciFi"    
     },
     {
       "codi" : "8",
@@ -78,7 +78,7 @@
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/jZjONCvSjr0",
       "resumen" : "gift nor art",
-      "tipus" : "Vocaloid SciFi" 
+      "tipus" : "Vocaloid > SciFi" 
     },
     {
       "codi" : "9",
@@ -88,7 +88,7 @@
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/0u_AQGt6dnE",
       "resumen" : "Escape primera part",
-      "tipus" : "Vocaloid SciFi" 
+      "tipus" : "Vocaloid > SciFi" 
     },
     {
       "codi" : "10",
@@ -98,7 +98,7 @@
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/yM0_0oSdwc8",
       "resumen" : "Escape segona part",
-      "tipus" : "Vocaloid SciFi"
+      "tipus" : "Vocaloid > SciFi"
     },
     {
       "codi" : "11",
@@ -138,7 +138,7 @@
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/y_g4zbwWG_I",
       "resumen" : "Pendent comentari",
-      "tipus" : "Vocaloid no-moviment"
+      "tipus" : "Vocaloid > No moviment"
     },
     {
       "codi" : "15",
@@ -148,7 +148,7 @@
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/u_QS0sjg6YU",
       "resumen" : "Aquest és un show 2015 de 39 minuts",
-      "tipus" : "Vocaloid Party"
+      "tipus" : "Vocaloid > Party"
     },
     {
       "codi" : "16",
@@ -158,7 +158,7 @@
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/7fyDbWTF-4g",
       "resumen" : "Nico nico cho party 2016 de 39 minuts (39 = san kyuu = thank you)",
-      "tipus" : "Vocaloid Party"
+      "tipus" : "Vocaloid > Party"
     },
     {
       "codi" : "17",
@@ -168,7 +168,7 @@
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/ozZKmgYfk30",
       "resumen" : "Nico nico cho party 2018 amb subtítles russos",
-      "tipus" : "Vocaloid Party"
+      "tipus" : "Vocaloid > Party"
     },    
     {
       "codi" : "18",
@@ -178,7 +178,7 @@
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/dNn7raI-ph4",
       "resumen" : "Nico nico cho party 2022 comprimida 5% (en temps potser) amb subtítles russos",
-      "tipus" : "Vocaloid Party"
+      "tipus" : "Vocaloid > Party"
     },
     {
       "codi" : "19",
@@ -239,7 +239,7 @@
       "autor" : "Inteligencia artificial - Rodri",
       "url": "https://www.youtube.com/embed/GdJoG97PrMo",
       "resumen": "Rodri de FunOnTheRide mostra coses destacades d'IA",
-      "tipus" : "Noticies IA"
+      "tipus" : "Noticies > IA"
     },
     {
       "codi" : "25",
@@ -249,7 +249,7 @@
       "autor" : "Keiser Report",
       "url": "https://www.youtube.com/embed/KiyKngldUzs",
       "resumen": "Com evolucionava el món de la crypto a 2022",
-      "tipus" : "Noticies Cripto"
+      "tipus" : "Noticies > Cripto"
     } 
     
   ]
