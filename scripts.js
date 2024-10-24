@@ -119,21 +119,31 @@ function generarMenuAcordeon(arbol, container) {
             subContainer.style.display = 'none'; // Iniciar oculto
             li.appendChild(subContainer);
 
+            // Generar el subárbol si existen subtipos
+            if (Object.keys(arbol[key]).length > 1) {
+                generarMenuAcordeon(arbol[key], subContainer);
+            } else if (arbol[key]._videos && arbol[key]._videos.length === 0) {
+                // Asegúrate de que incluso si solo hay un video, el submenú esté visible
+                const subLi = document.createElement('li');
+                subLi.innerText = "No anime"; // O el nombre que debería tener
+                subLi.addEventListener('click', (event) => {
+                    event.stopPropagation(); // Evitar que el clic se propague
+                    generarVideos(arbol[key]._videos); // Mostrar videos filtrados
+                });
+                subContainer.appendChild(subLi);
+            }
+
             // Evento para alternar la visibilidad del submenú
             li.addEventListener('click', (event) => {
                 event.stopPropagation(); // Evitar que el clic se propague
                 subContainer.style.display = subContainer.style.display === 'none' ? 'block' : 'none';
             });
 
-            // Generar el subárbol si existen subtipos
-            if (Object.keys(arbol[key]).length > 1) {
-                generarMenuAcordeon(arbol[key], subContainer);
-            }
-
             ul.appendChild(li);
         }
     });
 }
+
 
 // Función para filtrar los videos por tipo seleccionado en el selector
 function filtrarVideosPorTipo(tipoSeleccionado, videos) {
