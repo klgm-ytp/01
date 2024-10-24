@@ -92,13 +92,11 @@ function construirArbolDeTipos(videos) {
 function generarMenuAcordeon(arbol, container) {
     const ul = document.createElement('ul');
     container.appendChild(ul);
-    
     Object.keys(arbol).sort().forEach(key => { // Ordenar los tipos en el menú de árbol
         // Evitar mostrar el nodo _videos
         if (key !== '_videos') {
             const li = document.createElement('li');
             li.innerText = key;
-
             // Comprobar si hay videos asociados al tipo
             if (arbol[key]._videos && arbol[key]._videos.length > 0) {
                 // Si hay videos, agregar evento para filtrar
@@ -113,35 +111,28 @@ function generarMenuAcordeon(arbol, container) {
                     generarVideos([]); // Mostrar lista vacía
                 });
             }
-
             // Submenú
             const subContainer = document.createElement('div');
             subContainer.style.display = 'none'; // Iniciar oculto
             li.appendChild(subContainer);
-
             // Generar el subárbol si existen subtipos
-            if (Object.keys(arbol[key]).length > 1 || (Object.keys(arbol[key]).length === 1 && arbol[key]._videos.length === 0)) {
-                // Generar el submenú, incluso si solo hay un video
+            if (Object.keys(arbol[key]).length > 1) {
                 generarMenuAcordeon(arbol[key], subContainer);
-            }
-
-            // Si hay un solo video asociado, asegurarse de que se muestre
-            if (arbol[key]._videos && arbol[key]._videos.length === 1) {
+            } else if (arbol[key]._videos && arbol[key]._videos.length === 1) {
+                // Si solo hay un video asociado, agregarlo al submenú
                 const subLi = document.createElement('li');
-                subLi.innerText = arbol[key]._videos[0].tipus; // O el nombre que debería tener
+                subLi.innerText = arbol[key]._videos[0].tipus; // Mostrar el tipo del video
                 subLi.addEventListener('click', (event) => {
                     event.stopPropagation(); // Evitar que el clic se propague
                     generarVideos(arbol[key]._videos); // Mostrar videos filtrados
                 });
                 subContainer.appendChild(subLi);
             }
-
             // Evento para alternar la visibilidad del submenú
             li.addEventListener('click', (event) => {
                 event.stopPropagation(); // Evitar que el clic se propague
                 subContainer.style.display = subContainer.style.display === 'none' ? 'block' : 'none';
             });
-
             ul.appendChild(li);
         }
     });
