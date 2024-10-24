@@ -83,54 +83,40 @@ function construirArbolDeTipos(videos) {
 function generarMenuAcordeon(arbol, container) {
     const ul = document.createElement('ul');
     container.appendChild(ul);
-    
     Object.keys(arbol).sort().forEach(key => {
         if (key !== '_videos') {
             const li = document.createElement('li');
             li.innerText = key;
-            
             // Crear el subcontenedor
             const subContainer = document.createElement('div');
             li.appendChild(subContainer);
-            
-            // Verificar si este nodo tiene subtipos (excluyendo _videos y nodos vacíos)
+            // Verificar si este nodo tiene subtipos (excluyendo _videos)
             const subtipos = Object.keys(arbol[key]).filter(k => k !== '_videos');
             const tieneSubtipos = subtipos.length > 0;
             const tieneVideos = arbol[key]._videos && arbol[key]._videos.length > 0;
-            
-            if (tieneSubtipos) {
-                // Si tiene subtipos, generar el subárbol
-                generarMenuAcordeon(arbol[key], subContainer);
-                
-                // Agregar evento solo para expandir/colapsar
-                li.addEventListener('click', (event) => {
-                    event.stopPropagation();
+            // Agregar evento de clic para todos los nodos
+            li.addEventListener('click', (event) => {
+                event.stopPropagation();
+                // Siempre mostrar los videos asociados al nodo actual (o lista vacía si no hay)
+                if (tieneVideos) {
+                    generarVideos(arbol[key]._videos);
+                } else {
+                    generarVideos([]);
+                } 
+                // Si tiene subtipos, también manejar la expansión/colapso
+                if (tieneSubtipos) {
                     const isHidden = subContainer.style.display === 'none';
                     subContainer.style.display = isHidden ? 'block' : 'none';
-                });
-            } else if (tieneVideos) {
-                // Si solo tiene videos (sin subtipos), agregar evento para mostrarlos
-                li.addEventListener('click', (event) => {
-                    event.stopPropagation();
-                    generarVideos(arbol[key]._videos);
-                });
-                // No agregar subContainer ya que no hay subtipos
-                subContainer.remove();
-            } else {
-                // Si no tiene ni subtipos ni videos, mostrar lista vacía
-                li.addEventListener('click', (event) => {
-                    event.stopPropagation();
-                    generarVideos([]);
-                });
-                // No agregar subContainer ya que no hay subtipos
-                subContainer.remove();
-            }
-            
-            // Inicialmente ocultar el subcontenedor solo si tiene subtipos
+                }
+            });
+            // Si tiene subtipos, generar el subárbol
             if (tieneSubtipos) {
+                generarMenuAcordeon(arbol[key], subContainer);
                 subContainer.style.display = 'none';
+            } else {
+                // Si no tiene subtipos, eliminar el subcontenedor vacío
+                subContainer.remove();
             }
-            
             ul.appendChild(li);
         }
     });
