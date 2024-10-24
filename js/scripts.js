@@ -7,7 +7,7 @@ PENDENT:
 
 // Función para cargar el JSON y generar videos, el selector y el menú desplegable de árbol
 function cargarVideos() {
-    fetch('videos.json')
+    fetch('llista.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Error al cargar el archivo JSON');
