@@ -28,7 +28,7 @@
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/EVvkZIF_jr8",
       "resumen" : "S'interpreta part del contingut de mates d'un video d'animació.",
-      "tipus" : "Animació no tipus anime"
+      "tipus" : "Animació no-anime"
     },
     {
       "codi" : "4",
@@ -38,7 +38,7 @@
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/NocXEwsJGOQ",
       "resumen" : "Un exemple de j-pop més musical que visual. Si el que volies era una pantalla fosca (per una festa) no li falta res...",
-      "tipus" : "Vocaloid poc moviment"
+      "tipus" : "Vocaloid no-moviment"
     },
     {
       "codi" : "5",
@@ -138,7 +138,7 @@
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/y_g4zbwWG_I",
       "resumen" : "Pendent comentari",
-      "tipus" : "Vocaloid poc moviment"
+      "tipus" : "Vocaloid no-moviment"
     },
     {
       "codi" : "15",
