@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pàgina de Videos</title>
+    <title>Llista de preferits</title>
     <link rel="stylesheet" href="css/styles.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
@@ -20,7 +20,6 @@
     </select>
     </div>
     <hr>
-    <!-- Contenedor para el menú desplegable de árbol, de momento solamente es un texto arborificado, tengo que continuar esto -->
     <div id="menu-arbol"></div><!-- style="display:none;" -->
     <hr>
     <br>
@@ -38,16 +37,6 @@
         <button class="btn" id="send-comment">Envia comentari si vols</button>
         <br>
     </div>
-<!-
-    nivells de validació per a evitar bots:
-    
-    1 - (1) control camps buits, (2) honeypot
-    2 - (3) recaptcha, (4) tasa máxima por ip, (5) pregunta de seguretat, 
-        (6) requerir javascript, (7) contar temps mínim 
-        (8) confirmar correu electrónic (això ha és un registre) 
-    
-    aplicar nivell 2 si els bots esgoten els 200 mails per mes
--->
 </blockquote>
 <script src="js/email.js"></script><!-- aquest arxiu te un init() al final de script.js... necessitarà o millorarà amb defer?-->
 <script src="js/scripts.js" defer></script><!-- no era defer però la ultima chatgpt ha dit defer -->
