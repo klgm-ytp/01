@@ -159,7 +159,7 @@ function generarSelector(videos) {
     optionTodos.innerText = 'Tots';
     selector.appendChild(optionTodos);
 
-    // Agregar opciones desde el JSON, ordenadas
+    // Agregar opciones desde el JSON, usando el valor completo de 'tipus'
     tiposUnicos.forEach(tipo => {
         const option = document.createElement('option');
         option.value = tipo;
