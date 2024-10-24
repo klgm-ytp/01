@@ -5,7 +5,7 @@ PENDENT:
 3 : començar a usar bé git amb branches per a evitar haver de guardar el codi segur comentat com he fet ara
 */
 
-/*
+
 
 // Función para cargar el JSON y generar los videos
 function cargarVideos() {
@@ -115,7 +115,7 @@ window.onload = function() {
     document.getElementById('send-comment').addEventListener('click', enviarComentario);
 };
 
-*/
+/*
 
 // Función para cargar el JSON y generar los videos y el menú desplegable de árbol
 function cargarVideos() {
