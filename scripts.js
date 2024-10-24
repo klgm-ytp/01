@@ -95,25 +95,25 @@ function construirArbolDeTipos(videos) {
 function generarMenuAcordeon(arbol, container) {
     const ul = document.createElement('ul');
     container.appendChild(ul);
-
-    Object.keys(arbol).sort().forEach(key => {
+    Object.keys(arbol).sort().forEach(key => { // Ordenar los tipos en el menú de árbol
         // Evitar mostrar el nodo _videos
         if (key !== '_videos') {
             const li = document.createElement('li');
             li.innerText = key;
-
             // Si hay videos asociados, agregar evento para filtrar
             if (arbol[key]._videos && arbol[key]._videos.length > 0) {
                 li.addEventListener('click', () => {
                     generarVideos(arbol[key]._videos);
                 });
+            } else {
+                // Si no hay videos asociados, limpiar la lista al hacer clic
+                li.addEventListener('click', () => {
+                    generarVideos([]); // Mostrar lista vacía
+                });
             }
-
             ul.appendChild(li);
-
             // Si tiene subniveles, construir el subárbol
-            const subniveles = Object.keys(arbol[key]).filter(subkey => subkey !== '_videos');
-            if (subniveles.length > 0) {
+            if (Object.keys(arbol[key]).length > 1) {
                 const subContainer = document.createElement('div');
                 subContainer.style.display = 'none'; // Iniciar oculto
                 li.appendChild(subContainer);
