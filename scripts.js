@@ -146,6 +146,27 @@ function cargarVideos() {
         });
 }
 
+// Función para generar el selector tradicional (dropdown) de tipos de video
+function generarSelector(videos) {
+    const tiposUnicos = [...new Set(videos.flatMap(video => video.tipus.split(' ')))].sort();  // Ordenar alfabéticamente
+    const selector = document.getElementById('video-type');
+    selector.innerHTML = ''; // Limpiar el selector antes de agregar opciones
+
+    // Agregar opción "Todos"
+    const optionTodos = document.createElement('option');
+    optionTodos.value = 'todos';
+    optionTodos.innerText = 'Tots';
+    selector.appendChild(optionTodos);
+
+    // Agregar opciones desde el JSON, ordenadas
+    tiposUnicos.forEach(tipo => {
+        const option = document.createElement('option');
+        option.value = tipo;
+        option.textContent = tipo;
+        selector.appendChild(option);
+    });
+}
+
 // Función para construir el árbol a partir de los campos "tipus"
 function construirArbolDeTipos(videos) {
     const arbol = {};
@@ -199,33 +220,6 @@ function generarMenuAcordeon(arbol, container) {
 
             generarMenuAcordeon(arbol[key], subContainer);
         }
-    });
-}
-
-// Función para generar el selector tradicional (dropdown) de tipos de video
-function generarSelector(videos) {
-    const tiposUnicos = new Set();
-
-    // Extraer tipos únicos del campo "tipus"
-    videos.forEach(video => {
-        video.tipus.split(' ').forEach(tipo => tiposUnicos.add(tipo));
-    });
-
-    const selector = document.getElementById('video-type');
-    selector.innerHTML = ''; // Limpiar el selector antes de agregar opciones
-
-    // Agregar opción "Todos"
-    const optionTodos = document.createElement('option');
-    optionTodos.value = 'todos';
-    optionTodos.innerText = 'Tots';
-    selector.appendChild(optionTodos);
-
-    // Agregar opciones desde el JSON
-    tiposUnicos.forEach(tipo => {
-        const option = document.createElement('option');
-        option.value = tipo;
-        option.textContent = tipo;
-        selector.appendChild(option);
     });
 }
 
