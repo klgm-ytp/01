@@ -120,12 +120,15 @@ function generarMenuAcordeon(arbol, container) {
             li.appendChild(subContainer);
 
             // Generar el subárbol si existen subtipos
-            if (Object.keys(arbol[key]).length > 1) {
+            if (Object.keys(arbol[key]).length > 1 || (Object.keys(arbol[key]).length === 1 && arbol[key]._videos.length === 0)) {
+                // Generar el submenú, incluso si solo hay un video
                 generarMenuAcordeon(arbol[key], subContainer);
-            } else if (arbol[key]._videos && arbol[key]._videos.length === 0) {
-                // Asegúrate de que incluso si solo hay un video, el submenú esté visible
+            }
+
+            // Si hay un solo video asociado, asegurarse de que se muestre
+            if (arbol[key]._videos && arbol[key]._videos.length === 1) {
                 const subLi = document.createElement('li');
-                subLi.innerText = "No anime"; // O el nombre que debería tener
+                subLi.innerText = arbol[key]._videos[0].tipus; // O el nombre que debería tener
                 subLi.addEventListener('click', (event) => {
                     event.stopPropagation(); // Evitar que el clic se propague
                     generarVideos(arbol[key]._videos); // Mostrar videos filtrados
@@ -143,7 +146,6 @@ function generarMenuAcordeon(arbol, container) {
         }
     });
 }
-
 
 // Función para filtrar los videos por tipo seleccionado en el selector
 function filtrarVideosPorTipo(tipoSeleccionado, videos) {
