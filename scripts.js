@@ -43,7 +43,7 @@ function generarSelector(videos) {
     // Agregar opción "Todos"
     const optionTodos = document.createElement('option');
     optionTodos.value = 'todos';
-    optionTodos.innerText = 'Todos';
+    optionTodos.innerText = 'Tots';
     selectElement.appendChild(optionTodos);
     
     // Agregar opciones de tipos desde el JSON
@@ -206,7 +206,7 @@ function generarSelector(videos) {
     // Agregar opción "Todos"
     const optionTodos = document.createElement('option');
     optionTodos.value = 'todos';
-    optionTodos.innerText = 'Todos';
+    optionTodos.innerText = 'Tots';
     selectElement.appendChild(optionTodos);
     
     // Agregar opciones de tipos desde el JSON
