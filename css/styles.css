@@ -7,7 +7,7 @@ body {
     line-height: 1.6;
 }
 
-/* Contenedor general con márgenes laterales */
+/* Contenedor general */
 .container {
     width: 50%;
     margin: 0 auto; /* Centra el contenido horizontalmente */
@@ -17,16 +17,29 @@ body {
     justify-content: space-between;
 }
 
-.video-container, .summary-container {
-    width: 40%; /* Cada contenedor ocupa el 40% del ancho dentro de su margen : no em queda clar què és això */
-    margin-bottom: 20px;
+/* Estilo de los videos y resúmenes */
+.video-item {
+    display: flex;
+    align-items: flex-start; /* Alinea desde la parte superior */
+    justify-content: space-between;
+    margin-bottom: 10px; /* Espacio entre videos */
 }
 
-iframe {
-    width: 100%;
-    height: 250px;
+.video-container {
+    width: 60%; /* Ocupa el 60% del espacio */
 }
 
+.video-container iframe {
+    width: 100%; /* Ancho completo */
+    height: 250px; /* Altura predeterminada */
+}
+
+.summary-container {
+    width: 40%; /* Ocupa el 40% del espacio */
+    padding-left: 20px; /* Espacio entre video y resumen */
+}
+
+/* Estilos del botón */
 .button-container {
     text-align: center;
     margin-top: 40px;
@@ -38,7 +51,6 @@ iframe {
     color: white;
     padding: 12px 24px;
     font-size: 16px;
-    text-align: center;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -49,60 +61,22 @@ iframe {
     background-color: #45a049;
 }
 
-/* meu */
-.clar { font-family:arial; font-size:1rem; }
-
-/* Estilos adicionales para el menú desplegable y la lista de videos */
-#menu-arbol ul { list-style-type: none; padding-left: 10px; }
-#menu-arbol li { cursor: pointer; margin: 5px 0; }
-#menu-arbol li:hover { text-decoration: underline; }
-.video-item { display: flex; justify-content: space-between; margin-bottom: 10px; }
-.video-container { flex: 1; }
-.summary-container { flex: 1; margin-left: 20px; }
-
-/* afegit inici */
-
-/* Estilo para el contenedor del video y el resumen */
-.video-item {
-    display: flex;
-    align-items: flex-start; /* Alinea los elementos desde el top */
-    justify-content: space-between;
-    margin-bottom: 10px; /* Espacio entre videos */
+/* Estilos para el menú desplegable */
+#menu-arbol ul {
+    list-style-type: none;
+    padding-left: 10px;
 }
 
-/* Ajusta el tamaño del video (mitad de tamaño) */
-.video-container iframe {
-    width: 250px;  /* Mitad del ancho: no sembla funcionar a Safari */
-    height: 150px; /* Mitad de la altura */
+#menu-arbol li {
+    cursor: pointer;
+    margin: 5px 0;
 }
 
-/* El contenedor del resumen a la derecha */
-.summary-container {
-    width: 500px;  /* Ajusta el tamaño para el texto a la derecha */
-    margin-left: 10px; /* Espacio entre el video y el texto */
+#menu-arbol li:hover {
+    text-decoration: underline;
 }
 
-/* Asegurar que el contenido del texto empiece desde la parte superior */
-.summary-container p {
-    margin: 0; /* Elimina márgenes adicionales en el párrafo */
-    padding: 0; /* Asegura que el texto esté alineado correctamente */
-}
-
-/* Separador entre los videos */
-hr {
-    width: 100%;
-    border: 1px solid #ccc;
-    margin: 20px 0; /* Espacio alrededor del separador */
-}
-
-
-
-/* afegit final */
-
-
-
-
-
+/* Estilos para el área de comentarios */
 .comment-section {
     margin-top: 40px;
     text-align: center;
@@ -117,30 +91,17 @@ textarea {
     resize: none;
 }
 
-#send-comment {
-    display: inline-block;
+/* Estilos del separador */
+hr {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin: 20px 0; /* Espacio alrededor del separador */
 }
 
-/* --- veure si hi ha repeticions */
-
-ul { list-style-type: none; padding-left: 0; }
-li { padding: 5px; cursor: pointer; }
-li:hover { background-color: #f0f0f0; }
-.video-item { display: flex; align-items: center; }
-.video-container { width: 60%; }
-.summary-container { width: 40%; padding-left: 20px; }
-
-/* ----- */
-
-
-/* Para pantallas medianas y pequeñas */
+/* Reglas para pantallas medianas y pequeñas */
 @media (max-width: 768px) {
     .container {
-        width: 80%; /* 80% de ancho total (márgenes totales del 20%) */
-    }
-
-    iframe {
-        height: 250px;
+        width: 80%; /* 80% de ancho total */
     }
 
     .btn {
@@ -149,16 +110,8 @@ li:hover { background-color: #f0f0f0; }
     }
 }
 
-/* Para pantallas muy pequeñas (teléfonos) */
+/* Reglas para pantallas muy pequeñas */
 @media (max-width: 480px) {
-    .container {
-        width: 80%; /* Márgenes totales del 20% */
-    }
-
-    iframe {
-        height: 200px;
-    }
-
     .btn {
         font-size: 12px;
         padding: 8px 16px;
