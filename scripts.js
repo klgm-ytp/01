@@ -148,7 +148,7 @@ function cargarVideos() {
 
 // Función para generar el selector tradicional (dropdown) de tipos de video
 function generarSelector(videos) {
-    const tiposUnicos = [...new Set(videos.flatMap(video => video.tipus.split(' ')))].sort();  // Ordenar alfabéticamente
+    const tiposUnicos = [...new Set(videos.map(video => video.tipus))].sort();  // Mantener las líneas enteras y ordenarlas
     const selector = document.getElementById('video-type');
     selector.innerHTML = ''; // Limpiar el selector antes de agregar opciones
 
@@ -163,8 +163,14 @@ function generarSelector(videos) {
         const option = document.createElement('option');
         option.value = tipo;
         option.textContent = tipo;
+        if (tipo === "Vocaloid Party") {
+            option.selected = true; // Preseleccionar "Vocaloid Party"
+        }
         selector.appendChild(option);
     });
+
+    // Filtrar inmediatamente por Vocaloid Party si está presente
+    filtrarVideosPorTipo("Vocaloid Party", videos);
 }
 
 // Función para construir el árbol a partir de los campos "tipus"
@@ -172,7 +178,7 @@ function construirArbolDeTipos(videos) {
     const arbol = {};
 
     videos.forEach(video => {
-        const tipos = video.tipus.split(' ');  // Separar palabras del tipus
+        const tipos = video.tipus.split(' ');  // Separar palabras del tipus para el menú de árbol
         let nodoActual = arbol;
 
         tipos.forEach(tipo => {
@@ -194,7 +200,7 @@ function generarMenuAcordeon(arbol, container) {
     const ul = document.createElement('ul');
     container.appendChild(ul);
 
-    Object.keys(arbol).forEach(key => {
+    Object.keys(arbol).sort().forEach(key => { // Ordenar los tipos en el menú de árbol
         const li = document.createElement('li');
         li.innerText = key;
 
@@ -227,7 +233,7 @@ function generarMenuAcordeon(arbol, container) {
 function filtrarVideosPorTipo(tipoSeleccionado, videos) {
     const videosFiltrados = tipoSeleccionado === 'todos' 
         ? videos 
-        : videos.filter(video => video.tipus.includes(tipoSeleccionado));
+        : videos.filter(video => video.tipus === tipoSeleccionado);  // Comparar directamente el campo tipus
     generarVideos(videosFiltrados); // Llamar a la función para mostrar los videos filtrados
 }
 
@@ -269,8 +275,6 @@ function generarVideos(videos) {
         container.appendChild(separador);
     });
 }
-
-
 
 // Ejecutar las funciones cuando la página esté cargada
 window.onload = function() {
