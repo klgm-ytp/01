@@ -5,7 +5,7 @@ PENDENT:
 3 : començar a usar bé git amb branches per a evitar haver de guardar el codi segur comentat com he fet ara
 */
 
-/*
+/* aquest codi era abans de generar arbre i funciona bé
 
 // Función para cargar el JSON y generar los videos
 function cargarVideos() {
