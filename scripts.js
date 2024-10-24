@@ -146,7 +146,7 @@ function cargarVideos() {
         });
 }
 
-// Función para construir el árbol a partir de los campos "tipus"
+// Función para construir el árbol a partir de los campos "tipus"...
 function construirArbolDeTipos(videos) {
     const arbol = {};
 
