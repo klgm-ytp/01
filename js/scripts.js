@@ -35,16 +35,18 @@ function generarSelector(videos) {
     optionTodos.innerText = 'Tots';
     selector.appendChild(optionTodos);
     // Agregar opciones desde el JSON, usando el valor completo de 'tipus'
+    tato = "";
     tiposUnicos.forEach(tipo => {
         const option = document.createElement('option');
         option.value = tipo;
         option.textContent = tipo;
         if (tipo === "Animació > Vocaloid > Party") {
-            option.selected = true; // Preseleccionar "Animació > Vocaloid > Party"
+            tato = tipo;
+            option.selected = true; // Preseleccionar
         }
         selector.appendChild(option);
     });
-    filtrarVideosPorTipo("Vocaloid > Party", videos);
+    filtrarVideosPorTipo(tato, videos);
 }
 
 function construirArbolDeTipos(videos) {
