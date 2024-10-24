@@ -38,7 +38,7 @@
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/NocXEwsJGOQ",
       "resumen" : "Un exemple de j-pop més musical que visual. Si el que volies era una pantalla fosca (per una festa) no li falta res...",
-      "tipus" : "Vocaloid > Poc o cap moviment"
+      "tipus" : "Animació > Vocaloid > Poc o cap moviment"
     },
     {
       "codi" : "5",
@@ -48,7 +48,7 @@
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/8kX5_69sO8Q",
       "resumen" : "Pendent comentar",
-      "tipus" : "Vocaloid"
+      "tipus" : "Animació > Vocaloid"
     }, 
     {
       "codi" : "6",
@@ -58,7 +58,7 @@
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/l69v6SVoE9k",
       "resumen" : "Aquest és narratiu-musical",
-      "tipus" : "Vocaloid > Còmic"
+      "tipus" : "Animació > Vocaloid > Còmic"
     },
     {
       "codi" : "7",
@@ -68,7 +68,7 @@
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/p53KeRZq3jk",
       "resumen" : "Laniakea és un nom hawaià per un troç de cosmos on vivim",
-      "tipus" : "Vocaloid > SciFi"    
+      "tipus" : "Animació > Vocaloid > SciFi"    
     },
     {
       "codi" : "8",
@@ -78,7 +78,7 @@
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/jZjONCvSjr0",
       "resumen" : "gift nor art",
-      "tipus" : "Vocaloid > SciFi" 
+      "tipus" : "Animació > Vocaloid > SciFi" 
     },
     {
       "codi" : "9",
@@ -88,7 +88,7 @@
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/0u_AQGt6dnE",
       "resumen" : "Escape primera part",
-      "tipus" : "Vocaloid > SciFi" 
+      "tipus" : "Animació > Vocaloid > SciFi" 
     },
     {
       "codi" : "10",
@@ -98,7 +98,7 @@
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/yM0_0oSdwc8",
       "resumen" : "Escape segona part",
-      "tipus" : "Vocaloid > SciFi"
+      "tipus" : "Animació > Vocaloid > SciFi"
     },
     {
       "codi" : "11",
@@ -108,7 +108,7 @@
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/243vPl8HdVk", 
       "resumen" : "Redial",
-      "tipus" : "Vocaloid"
+      "tipus" : "Animació > Vocaloid"
     },
     {
       "codi" : "12",
@@ -118,7 +118,7 @@
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/zkLJoFp2UAE", 
       "resumen" : "origen del logo de Discord?",
-      "tipus" : "Vocaloid"
+      "tipus" : "Animació > Vocaloid"
     },    
     {
       "codi" : "13",
@@ -128,7 +128,7 @@
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/PqJNc9KVIZE", 
       "resumen" : "Poser el 'hello world' de Vocaloid",
-      "tipus" : "Vocaloid"
+      "tipus" : "Animació > Vocaloid"
     }, 
     {
       "codi" : "14",
@@ -138,7 +138,7 @@
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/y_g4zbwWG_I",
       "resumen" : "Pendent comentari",
-      "tipus" : "Vocaloid > Poc o cap moviment"
+      "tipus" : "Animació > Vocaloid > Poc o cap moviment"
     },
     {
       "codi" : "15",
@@ -148,7 +148,7 @@
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/u_QS0sjg6YU",
       "resumen" : "Aquest és un show 2015 de 39 minuts",
-      "tipus" : "Vocaloid > Party"
+      "tipus" : "Animació > Vocaloid > Party"
     },
     {
       "codi" : "16",
@@ -158,7 +158,7 @@
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/7fyDbWTF-4g",
       "resumen" : "Nico nico cho party 2016 de 39 minuts (39 = san kyuu = thank you)",
-      "tipus" : "Vocaloid > Party"
+      "tipus" : "Animació > Vocaloid > Party"
     },
     {
       "codi" : "17",
@@ -168,7 +168,7 @@
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/ozZKmgYfk30",
       "resumen" : "Nico nico cho party 2018 amb subtítles russos",
-      "tipus" : "Vocaloid > Party"
+      "tipus" : "Animació > Vocaloid > Party"
     },    
     {
       "codi" : "18",
@@ -178,7 +178,7 @@
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/dNn7raI-ph4",
       "resumen" : "Nico nico cho party 2022 comprimida 5% (en temps potser) amb subtítles russos",
-      "tipus" : "Vocaloid > Party"
+      "tipus" : "Animació > Vocaloid > Party"
     },
     {
       "codi" : "19",
@@ -216,7 +216,7 @@
       "pendent" : "arreglar data",
       "medi" : "ChatGPT",
       "autor" : "joanignasi",
-      "comentari extra": "https://chatgpt.com/share/67189fab-0718-8008-9d74-5ea6b5fe9c68 <---- aquest era el link correcte", 
+      "XXXXXXXXXXXXXXX extra": "https://chatgpt.com/share/67189fab-0718-8008-9d74-5ea6b5fe9c68 <---- aquest era el link correcte", 
       "url": "https://www.youtube.com/embed/uA2JysL5Yso",
       "resumen": "PENDENT ARREGLAR AQUEST REGISTRE - De la lingüística a la política colonial d'Occident a Orient",
       "tipus" : "Idiomes"
