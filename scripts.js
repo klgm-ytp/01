@@ -129,11 +129,14 @@ function generarMenuAcordeon(arbol, container) {
 
 // Función para filtrar los videos por tipo seleccionado en el selector
 function filtrarVideosPorTipo(tipoSeleccionado, videos) {
+    const selector = document.getElementById('video-type'); // Obtener el selector
+    selector.value = tipoSeleccionado; // Establecer el valor seleccionado en el selector
     const videosFiltrados = tipoSeleccionado === 'todos' 
         ? videos 
         : videos.filter(video => video.tipus === tipoSeleccionado);  // Comparar directamente el campo tipus completo
     generarVideos(videosFiltrados); // Llamar a la función para mostrar los videos filtrados
 }
+
 
 // Función para generar los videos en el DOM
 function generarVideos(videos) {
