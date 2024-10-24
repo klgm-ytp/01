@@ -7,6 +7,36 @@
 <body>
 <bockquote>
 
+  <!--
+  
+  pendent documentar el que ha estat necessari fer per a poder fer un push
+
+  com des d'agost de 2021 github no permet usar password per fer push hi ha dos opcions, usar un token o usar un ssh key
+
+  he escollit la segona
+
+  es genera amb
+
+  > ssh-keygen -t rsa -b 4096 -C "tu_email@example.com"
+
+  l'has d'acceptar que es fiqui la clau al lloc on diu
+  has de copiar el text que es genera dins l'arxiu ".pub"
+  has d'anar a la configuració de github i copiar el text dins un lloc que diu que són secrets 
+  (no diu ssh ni gpg suposo per drets d'autor)
+  
+  després has de fer el canvi a https (o similar)
+  
+  > git remote set-url origin git@github.com:klgm-ytp/01.git
+  
+  llavors ja pots fer
+
+  > git push origin main
+
+  es queixa dient que tot és insegur però a partir de llavors pots fer push
+  
+  -->
+
+  
 <h2>RESUM:</h2>
 <p style="text-align:justify;">
 Experiments de 1993 i 2001 mostren que preferim patir més o gaudir menys perquè oblidem les duracions i recordem solament 
