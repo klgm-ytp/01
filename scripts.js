@@ -5,7 +5,7 @@ PENDENT:
 3 : començar a usar bé git amb branches per a evitar haver de guardar el codi segur comentat com he fet ara
 */
 
-// Función para cargar el JSON y generar los videos, el selector y el menú desplegable de árbol
+// Función para cargar el JSON y generar videos, el selector y el menú desplegable de árbol
 function cargarVideos() {
     fetch('videos.json')
         .then(response => {
@@ -35,7 +35,7 @@ function cargarVideos() {
         });
 }
 
-// Función para generar el selector tradicional (dropdown) de tipos de video
+// generar el selector tradicional (dropdown) de tipos de video
 function generarSelector(videos) {
     // Obtener todos los 'tipus' únicos completos sin dividir por palabras y ordenarlos
     const tiposUnicos = [...new Set(videos.map(video => video.tipus))].sort();  
@@ -61,7 +61,7 @@ function generarSelector(videos) {
     filtrarVideosPorTipo("Vocaloid > Party", videos);
 }
 
-// Función para construir el árbol a partir de los campos "tipus"
+// construir el árbol a partir de los campos "tipus"
 function construirArbolDeTipos(videos) {
     const arbol = {};
     videos.forEach(video => {
@@ -83,32 +83,39 @@ function construirArbolDeTipos(videos) {
 function generarMenuAcordeon(arbol, container) {
     const ul = document.createElement('ul');
     container.appendChild(ul);
+    
     Object.keys(arbol).sort().forEach(key => {
         if (key !== '_videos') {
             const li = document.createElement('li');
             li.innerText = key;
+            
             // Crear el subcontenedor
             const subContainer = document.createElement('div');
             li.appendChild(subContainer);
+            
             // Verificar si este nodo tiene subtipos (excluyendo _videos)
             const subtipos = Object.keys(arbol[key]).filter(k => k !== '_videos');
             const tieneSubtipos = subtipos.length > 0;
             const tieneVideos = arbol[key]._videos && arbol[key]._videos.length > 0;
+            
             // Agregar evento de clic para todos los nodos
             li.addEventListener('click', (event) => {
                 event.stopPropagation();
+                
                 // Siempre mostrar los videos asociados al nodo actual (o lista vacía si no hay)
                 if (tieneVideos) {
                     generarVideos(arbol[key]._videos);
                 } else {
                     generarVideos([]);
-                } 
+                }
+                
                 // Si tiene subtipos, también manejar la expansión/colapso
                 if (tieneSubtipos) {
                     const isHidden = subContainer.style.display === 'none';
                     subContainer.style.display = isHidden ? 'block' : 'none';
                 }
             });
+            
             // Si tiene subtipos, generar el subárbol
             if (tieneSubtipos) {
                 generarMenuAcordeon(arbol[key], subContainer);
@@ -117,12 +124,13 @@ function generarMenuAcordeon(arbol, container) {
                 // Si no tiene subtipos, eliminar el subcontenedor vacío
                 subContainer.remove();
             }
+            
             ul.appendChild(li);
         }
     });
 }
 
-// Función para filtrar los videos por tipo seleccionado en el selector
+// filtrar los videos por tipo seleccionado en el selector
 function filtrarVideosPorTipo(tipoSeleccionado, videos) {
     const selector = document.getElementById('video-type'); // Obtener el selector
     selector.value = tipoSeleccionado; // Establecer el valor seleccionado en el selector
@@ -132,7 +140,7 @@ function filtrarVideosPorTipo(tipoSeleccionado, videos) {
     generarVideos(videosFiltrados); // Llamar a la función para mostrar los videos filtrados
 }
 
-// Función para generar los videos en el DOM
+// generar los videos en el DOM
 function generarVideos(videos) {
     const container = document.getElementById('video-list');
     container.innerHTML = ''; // Limpiar el contenedor antes de agregar nuevos videos
