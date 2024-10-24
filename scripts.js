@@ -65,9 +65,6 @@ function generarSelector(videos) {
     filtrarVideosPorTipo("Vocaloid > Party", videos);
 }
 
-
-
-
 // Función para construir el árbol a partir de los campos "tipus"
 function construirArbolDeTipos(videos) {
     const arbol = {};
@@ -137,7 +134,6 @@ function generarMenuAcordeon(arbol, container) {
         }
     });
 }
-
 
 // Función para filtrar los videos por tipo seleccionado en el selector
 function filtrarVideosPorTipo(tipoSeleccionado, videos) {
