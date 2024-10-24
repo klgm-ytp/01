@@ -65,22 +65,18 @@ function generarSelector(videos) {
 // Función para construir el árbol a partir de los campos "tipus"
 function construirArbolDeTipos(videos) {
     const arbol = {};
-
     videos.forEach(video => {
-        const tipos = video.tipus.split(' ');  // Separar palabras del tipus solo para el menú de árbol
+        const tipos = video.tipus.split(' > ');  // Usar un delimitador específico
         let nodoActual = arbol;
-
         tipos.forEach(tipo => {
             if (!nodoActual[tipo]) {
                 nodoActual[tipo] = {};  // Crear nuevo nodo si no existe
             }
             nodoActual = nodoActual[tipo];  // Moverse al siguiente nivel
         });
-
         nodoActual._videos = nodoActual._videos || [];
         nodoActual._videos.push(video);  // Guardar el video en la hoja
     });
-
     return arbol;
 }
 
