@@ -167,8 +167,8 @@ function generarVideos(videos) {
         // Agregar el videoItem al contenedor principal
         container.appendChild(videoItem);
         // Agregar un separador <hr> entre videos
-        const separador = document.createElement('hr');
-        container.appendChild(separador);
+        //   const separador = document.createElement('hr');
+        //   container.appendChild(separador);
     });
 }
 
