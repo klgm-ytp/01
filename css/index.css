@@ -1,0 +1,4 @@
+.contenedor { margin: 20px auto; padding: 20px; max-width: 800px; text-align: center; } 
+body { font-family: Arial, sans-serif; font-size: 1.1rem; background-color: #fff0e3; margin: 0; padding: 0; }
+p {  margin-bottom: 1.5em; }
+img { max-width: 100%; height: auto; }
