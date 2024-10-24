@@ -148,7 +148,8 @@ function cargarVideos() {
 
 // Función para generar el selector tradicional (dropdown) de tipos de video
 function generarSelector(videos) {
-    const tiposUnicos = [...new Set(videos.map(video => video.tipus))].sort();  // Mantener las líneas enteras y ordenarlas
+    // Obtener todos los 'tipus' únicos completos sin dividir por palabras y ordenarlos
+    const tiposUnicos = [...new Set(videos.map(video => video.tipus))].sort();  
     const selector = document.getElementById('video-type');
     selector.innerHTML = ''; // Limpiar el selector antes de agregar opciones
 
@@ -178,7 +179,7 @@ function construirArbolDeTipos(videos) {
     const arbol = {};
 
     videos.forEach(video => {
-        const tipos = video.tipus.split(' ');  // Separar palabras del tipus para el menú de árbol
+        const tipos = video.tipus.split(' ');  // Separar palabras del tipus solo para el menú de árbol
         let nodoActual = arbol;
 
         tipos.forEach(tipo => {
@@ -233,7 +234,7 @@ function generarMenuAcordeon(arbol, container) {
 function filtrarVideosPorTipo(tipoSeleccionado, videos) {
     const videosFiltrados = tipoSeleccionado === 'todos' 
         ? videos 
-        : videos.filter(video => video.tipus === tipoSeleccionado);  // Comparar directamente el campo tipus
+        : videos.filter(video => video.tipus === tipoSeleccionado);  // Comparar directamente el campo tipus completo
     generarVideos(videosFiltrados); // Llamar a la función para mostrar los videos filtrados
 }
 
