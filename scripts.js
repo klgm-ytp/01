@@ -82,25 +82,28 @@ function generarMenuAcordeon(arbol, container) {
     const ul = document.createElement('ul');
     container.appendChild(ul);
     Object.keys(arbol).sort().forEach(key => { // Ordenar los tipos en el menú de árbol
-        const li = document.createElement('li');
-        li.innerText = key;
-        if (arbol[key]._videos) {
-            // Si es una hoja, al hacer clic se filtrarán los videos
-            li.addEventListener('click', () => {
-                generarVideos(arbol[key]._videos);
-            });
-        }
-        ul.appendChild(li);
-        // Si tiene subniveles, construir el subárbol
-        if (Object.keys(arbol[key]).length > 1) {
-            const subContainer = document.createElement('div');
-            subContainer.style.display = 'none'; // Iniciar oculto
-            li.appendChild(subContainer);
-            li.addEventListener('click', () => {
-                // Alternar el submenú cuando se hace clic
-                subContainer.style.display = subContainer.style.display === 'none' ? 'block' : 'none';
-            });
-            generarMenuAcordeon(arbol[key], subContainer);
+        // Evitar mostrar el nodo _videos
+        if (key !== '_videos') {
+            const li = document.createElement('li');
+            li.innerText = key;
+            // Si hay videos asociados, agregar evento para filtrar
+            if (arbol[key]._videos && arbol[key]._videos.length > 0) {
+                li.addEventListener('click', () => {
+                    generarVideos(arbol[key]._videos);
+                });
+            }
+            ul.appendChild(li);
+            // Si tiene subniveles, construir el subárbol
+            if (Object.keys(arbol[key]).length > 1) {
+                const subContainer = document.createElement('div');
+                subContainer.style.display = 'none'; // Iniciar oculto
+                li.appendChild(subContainer);
+                li.addEventListener('click', () => {
+                    // Alternar el submenú cuando se hace clic
+                    subContainer.style.display = subContainer.style.display === 'none' ? 'block' : 'none';
+                });
+                generarMenuAcordeon(arbol[key], subContainer);
+            }
         }
     });
 }
