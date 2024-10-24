@@ -113,6 +113,18 @@ textarea {
     display: inline-block;
 }
 
+/* --- veure si hi ha repeticions */
+
+ul { list-style-type: none; padding-left: 0; }
+li { padding: 5px; cursor: pointer; }
+li:hover { background-color: #f0f0f0; }
+.video-item { display: flex; align-items: center; }
+.video-container { width: 60%; }
+.summary-container { width: 40%; padding-left: 20px; }
+
+/* ----- */
+
+
 /* Para pantallas medianas y pequeñas */
 @media (max-width: 768px) {
     .container {
