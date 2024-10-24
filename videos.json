@@ -38,7 +38,7 @@
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/NocXEwsJGOQ",
       "resumen" : "Un exemple de j-pop més musical que visual. Si el que volies era una pantalla fosca (per una festa) no li falta res...",
-      "tipus" : "Vocaloid > Poc moviment"
+      "tipus" : "Vocaloid > Poc o cap moviment"
     },
     {
       "codi" : "5",
@@ -138,7 +138,7 @@
       "autor" : "pendent",
       "url" : "https://www.youtube.com/embed/y_g4zbwWG_I",
       "resumen" : "Pendent comentari",
-      "tipus" : "Vocaloid > No moviment"
+      "tipus" : "Vocaloid > Poc o cap moviment"
     },
     {
       "codi" : "15",
@@ -239,7 +239,7 @@
       "autor" : "Inteligencia artificial - Rodri",
       "url": "https://www.youtube.com/embed/GdJoG97PrMo",
       "resumen": "Rodri de FunOnTheRide mostra coses destacades d'IA",
-      "tipus" : "Noticies > IA"
+      "tipus" : "Noticies > IA > Rodri"
     },
     {
       "codi" : "25",
