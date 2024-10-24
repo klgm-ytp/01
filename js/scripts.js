@@ -53,7 +53,7 @@ function generarSelector(videos) {
         option.textContent = tipo;
         // Preseleccionar "Vocaloid > Party"
         if (tipo === "Vocaloid > Party") {
-            option.selected = true; // Preseleccionar "Vocaloid > Party"
+            option.selected = true; // Preseleccionar "Animació > Vocaloid > Party"
         }
         selector.appendChild(option);
     });
