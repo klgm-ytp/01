@@ -117,7 +117,7 @@ window.onload = function() {
 
 */
 
-// Función para cargar el JSON y generar los videos y el menú desplegable de árbol
+// Función para cargar el JSON y generar los videos, el selector y el menú desplegable de árbol
 function cargarVideos() {
     fetch('videos.json')
         .then(response => {
@@ -127,15 +127,15 @@ function cargarVideos() {
             return response.json();
         })
         .then(data => {
-            // Generar selector tradicional
+            // Generar el selector tradicional
             generarSelector(data.videos);
 
             // Construir el árbol de tipos y generar el menú desplegable
             const arbolDeTipos = construirArbolDeTipos(data.videos);
             const menuContainer = document.getElementById('menu-arbol');
-            generarMenuDesplegable(arbolDeTipos, menuContainer);
+            generarMenuAcordeon(arbolDeTipos, menuContainer);
 
-            // Agregar evento para el selector
+            // Agregar evento para el selector (filtrado tradicional)
             document.getElementById('video-type').addEventListener('change', function() {
                 const selectedType = this.value;
                 filtrarVideosPorTipo(selectedType, data.videos);
@@ -146,7 +146,7 @@ function cargarVideos() {
         });
 }
 
-// Función para construir el árbol a partir de los campos "tipus"...
+// Función para construir el árbol a partir de los campos "tipus"
 function construirArbolDeTipos(videos) {
     const arbol = {};
 
@@ -168,8 +168,8 @@ function construirArbolDeTipos(videos) {
     return arbol;
 }
 
-// Función para generar el menú desplegable de árbol
-function generarMenuDesplegable(arbol, container) {
+// Función para generar el menú desplegable de árbol (acordeón)
+function generarMenuAcordeon(arbol, container) {
     const ul = document.createElement('ul');
     container.appendChild(ul);
 
@@ -189,49 +189,52 @@ function generarMenuDesplegable(arbol, container) {
         // Si tiene subniveles, construir el subárbol
         if (Object.keys(arbol[key]).length > 1) {
             const subContainer = document.createElement('div');
+            subContainer.style.display = 'none'; // Iniciar oculto
             li.appendChild(subContainer);
-            generarMenuDesplegable(arbol[key], subContainer);
+
+            li.addEventListener('click', () => {
+                // Alternar el submenú cuando se hace clic
+                subContainer.style.display = subContainer.style.display === 'none' ? 'block' : 'none';
+            });
+
+            generarMenuAcordeon(arbol[key], subContainer);
         }
     });
 }
 
-// Función para generar el selector de tipos (ordenado alfabéticamente)
+// Función para generar el selector tradicional (dropdown) de tipos de video
 function generarSelector(videos) {
-    const videoTypes = [...new Set(videos.map(video => video.tipus))].sort();
-    const selectElement = document.getElementById('video-type');
-    
-    // Limpiar opciones existentes
-    selectElement.innerHTML = '';
-    
+    const tiposUnicos = new Set();
+
+    // Extraer tipos únicos del campo "tipus"
+    videos.forEach(video => {
+        video.tipus.split(' ').forEach(tipo => tiposUnicos.add(tipo));
+    });
+
+    const selector = document.getElementById('video-type');
+    selector.innerHTML = ''; // Limpiar el selector antes de agregar opciones
+
     // Agregar opción "Todos"
     const optionTodos = document.createElement('option');
     optionTodos.value = 'todos';
     optionTodos.innerText = 'Tots';
-    selectElement.appendChild(optionTodos);
-    
-    // Agregar opciones de tipos desde el JSON
-    videoTypes.forEach(type => {
-        const option = document.createElement('option');
-        option.value = type;
-        option.innerText = type;
-        if (type === "Vocaloid Party") {
-            option.selected = true;
-        }
-        selectElement.appendChild(option);
-    });
+    selector.appendChild(optionTodos);
 
-    // Filtrar inmediatamente por Vocaloid Party
-    filtrarVideosPorTipo("Vocaloid Party", videos);
+    // Agregar opciones desde el JSON
+    tiposUnicos.forEach(tipo => {
+        const option = document.createElement('option');
+        option.value = tipo;
+        option.textContent = tipo;
+        selector.appendChild(option);
+    });
 }
 
-// Función para filtrar videos según el tipo seleccionado
+// Función para filtrar los videos por tipo seleccionado en el selector
 function filtrarVideosPorTipo(tipoSeleccionado, videos) {
-    const container = document.getElementById('video-list');
-    container.innerHTML = '';
-    const filteredVideos = tipoSeleccionado === 'todos' 
+    const videosFiltrados = tipoSeleccionado === 'todos' 
         ? videos 
-        : videos.filter(video => video.tipus === tipoSeleccionado);
-    generarVideos(filteredVideos);
+        : videos.filter(video => video.tipus.includes(tipoSeleccionado));
+    generarVideos(videosFiltrados); // Llamar a la función para mostrar los videos filtrados
 }
 
 // Función para generar los videos en el DOM
@@ -272,6 +275,8 @@ function generarVideos(videos) {
         container.appendChild(separador);
     });
 }
+
+
 
 // Ejecutar las funciones cuando la página esté cargada
 window.onload = function() {
