@@ -49,8 +49,16 @@ iframe {
     background-color: #45a049;
 }
 
+/* meu */
+.clar { font-family:arial; font-size:1rem; }
 
-
+/* Estilos adicionales para el menú desplegable y la lista de videos */
+#menu-arbol ul { list-style-type: none; padding-left: 10px; }
+#menu-arbol li { cursor: pointer; margin: 5px 0; }
+#menu-arbol li:hover { text-decoration: underline; }
+.video-item { display: flex; justify-content: space-between; margin-bottom: 10px; }
+.video-container { flex: 1; }
+.summary-container { flex: 1; margin-left: 20px; }
 
 /* afegit inici */
 
