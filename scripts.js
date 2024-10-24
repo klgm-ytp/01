@@ -89,50 +89,47 @@ function generarMenuAcordeon(arbol, container) {
             const li = document.createElement('li');
             li.innerText = key;
             
-            // Crear el subcontenedor siempre visible
+            // Crear el subcontenedor
             const subContainer = document.createElement('div');
             li.appendChild(subContainer);
             
-            // Verificar si este nodo tiene subtipos o videos
-            const tieneSubtipos = Object.keys(arbol[key]).some(k => k !== '_videos');
+            // Verificar si este nodo tiene subtipos (excluyendo _videos y nodos vacíos)
+            const subtipos = Object.keys(arbol[key]).filter(k => k !== '_videos');
+            const tieneSubtipos = subtipos.length > 0;
             const tieneVideos = arbol[key]._videos && arbol[key]._videos.length > 0;
             
             if (tieneSubtipos) {
                 // Si tiene subtipos, generar el subárbol
                 generarMenuAcordeon(arbol[key], subContainer);
                 
-                // Agregar evento para mostrar/ocultar subtipos
+                // Agregar evento solo para expandir/colapsar
                 li.addEventListener('click', (event) => {
                     event.stopPropagation();
                     const isHidden = subContainer.style.display === 'none';
                     subContainer.style.display = isHidden ? 'block' : 'none';
                 });
-            }
-            
-            if (tieneVideos) {
-                // Si tiene videos directamente asociados, agregar evento para mostrarlos
+            } else if (tieneVideos) {
+                // Si solo tiene videos (sin subtipos), agregar evento para mostrarlos
                 li.addEventListener('click', (event) => {
                     event.stopPropagation();
                     generarVideos(arbol[key]._videos);
-                    
-                    // Si tiene subtipos, alternar su visibilidad
-                    if (tieneSubtipos) {
-                        const isHidden = subContainer.style.display === 'none';
-                        subContainer.style.display = isHidden ? 'block' : 'none';
-                    }
                 });
-            }
-            
-            // Si no tiene ni subtipos ni videos, agregar evento para mostrar lista vacía
-            if (!tieneSubtipos && !tieneVideos) {
+                // No agregar subContainer ya que no hay subtipos
+                subContainer.remove();
+            } else {
+                // Si no tiene ni subtipos ni videos, mostrar lista vacía
                 li.addEventListener('click', (event) => {
                     event.stopPropagation();
                     generarVideos([]);
                 });
+                // No agregar subContainer ya que no hay subtipos
+                subContainer.remove();
             }
             
-            // Inicialmente ocultar el subcontenedor
-            subContainer.style.display = 'none';
+            // Inicialmente ocultar el subcontenedor solo si tiene subtipos
+            if (tieneSubtipos) {
+                subContainer.style.display = 'none';
+            }
             
             ul.appendChild(li);
         }
