@@ -219,7 +219,7 @@
       "XXXXXXXXXXXXXXX extra": "https://chatgpt.com/share/67189fab-0718-8008-9d74-5ea6b5fe9c68 <---- aquest era el link correcte", 
       "url": "https://www.youtube.com/embed/uA2JysL5Yso",
       "resumen": "PENDENT ARREGLAR AQUEST REGISTRE - De la lingüística a la política colonial d'Occident a Orient",
-      "tipus" : "Idiomes"
+      "tipus" : "Chats públics > ChatGPT"
     } ,
     {
       "codi" : "23",
@@ -250,7 +250,137 @@
       "url": "https://www.youtube.com/embed/KiyKngldUzs",
       "resumen": "Com evolucionava el món de la crypto a 2022",
       "tipus" : "Noticies > Cripto"
-    } 
-    
+    },
+    {
+      "codi" : "26",
+      "data" : "27/10/2024",
+      "pendent" : "arreglar data",
+      "medi" : "YT",
+      "autor" : "IFT",
+      "url": "https://www.youtube.com/embed/UlnP-tDN7uw",
+      "resumen": "Com es justifica una mica que infinit = Sum(n) = -1/12 implica que la teoria de cordes viu a 10 dimensions",
+      "tipus" : "Ciència > IFT"
+    },
+    {
+      "codi" : "27",
+      "data" : "27/10/2024",
+      "pendent" : "arreglar data",
+      "medi" : "YT",
+      "autor" : "Basquecraft",
+      "url": "https://www.youtube.com/embed/uV75kyDy4Vo",
+      "resumen": "Història de la truita de patates",
+      "tipus" : "Història > Cuina"
+    },
+    {
+      "codi" : "28",
+      "data" : "27/10/2024",
+      "pendent" : "arreglar data",
+      "medi" : "YT",
+      "autor" : "DOT CSV Lab",
+      "url": "https://www.youtube.com/embed/XyljctW2ZRE",
+      "resumen": "Estat d'integració de la IA a la suite d'Adobe",
+      "tipus" : "Noticies > IA > DOT CSV Lab"
+    },
+    {
+      "codi" : "29",
+      "data" : "27/10/2024",
+      "pendent" : "arreglar data",
+      "medi" : "YT",
+      "autor" : "DOT CSV Lab",
+      "url": "https://www.youtube.com/embed/BGlBn-EyYk0",
+      "resumen": "Estat d'integració de la IA a la suite d'Adobe",
+      "tipus" : "Matemàtiques > Ichigoo"
+    },
+    {
+      "codi" : "30",
+      "data" : "27/10/2024",
+      "pendent" : "arreglar data",
+      "medi" : "YT",
+      "autor" : "Xavier Mitjana",
+      "url": "https://www.youtube.com/embed/sTZbXxzxi9E",
+      "resumen": "Com usar IA per millorar YouTube a ensenyament",
+      "tipus" : "Noticies > IA > Xavier Mitjana"
+    },     
+    {
+      "codi" : "31",
+      "data" : "24/10/2024",
+      "pendent" : "arreglar data",
+      "medi" : "ChatGPT",
+      "autor" : "joanignasi",
+      "XXXXXXXXXXXXXXX extra": "https://chatgpt.com/share/67100486-45c0-8008-bdea-a346a7c15bc6 <---- aquest era el link correcte", 
+      "url": "https://www.youtube.com/embed/uA2JysL5Yso",
+      "resumen": "PENDENT ARREGLAR AQUEST REGISTRE - Propietats d'alguns nombres de tres xifres",
+      "tipus" : "Chats públics > ChatGPT"
+    },     
+    {
+      "codi" : "32",
+      "data" : "24/10/2024",
+      "pendent" : "arreglar data",
+      "medi" : "YT",
+      "autor" : "Math Beast",
+      "url": "https://www.youtube.com/embed/2OIiLu5xn-E",
+      "resumen": "Arrel quadrada del nombre imaginari",
+      "tipus" : "Matemàtiques > Math Beast"
+    },     
+    {
+      "codi" : "33",
+      "data" : "24/10/2024",
+      "pendent" : "arreglar data",
+      "medi" : "YT",
+      "autor" : "Digital Genius",
+      "url": "https://www.youtube.com/embed/3wEth2tcL5k",
+      "resumen": "50 constants físiques",
+      "tipus" : "Ciència > Física"
+    },     
+    {
+      "codi" : "34",
+      "data" : "24/10/2024",
+      "pendent" : "arreglar data",
+      "medi" : "YT",
+      "autor" : "Vida MMR",
+      "url": "https://www.youtube.com/embed/UxWxbqXHR5U",
+      "resumen": "Nova regla CSS per a propietats custom",
+      "tipus" : "Programació > Web > Frontend > CSS"
+    },     
+    {
+      "codi" : "35",
+      "data" : "24/10/2024",
+      "pendent" : "arreglar data",
+      "medi" : "YT",
+      "autor" : "Campus Fácil",
+      "url": "https://www.youtube.com/embed/CjyN9vwTIAE",
+      "resumen": "Com instal·lar Android 13 a un PC antic",
+      "tipus" : "Sistemes > Instal·lacions > PC > Android"
+    },     
+    {
+      "codi" : "36",
+      "data" : "24/10/2024",
+      "pendent" : "arreglar data",
+      "medi" : "YT",
+      "autor" : "midulive",
+      "url": "https://www.youtube.com/embed/WDcbnOP-MIo",
+      "resumen": "Com fer animacions CSS amb display sense javascript",
+      "tipus" : "Programació > Web > Frontend > CSS"
+    },     
+    {
+      "codi" : "37",
+      "data" : "24/10/2024",
+      "pendent" : "arreglar data",
+      "medi" : "YT",
+      "autor" : "Pocho Costa",
+      "url": "https://www.youtube.com/embed/ADenY85zhFA",
+      "resumen": "Perplexity vs Google",
+      "tipus" : "Noticies > AI > Comparacions"
+    },     
+    {
+      "codi" : "38",
+      "data" : "24/10/2024",
+      "pendent" : "arreglar data",
+      "medi" : "YT",
+      "autor" : "SoftDoit",
+      "url": "https://www.youtube.com/embed/HTLPxzvU4js",
+      "resumen": "Perplexity vs ChatGPT",
+      "tipus" : "Noticies > AI > Comparacions"
+    }
   ]
 }
