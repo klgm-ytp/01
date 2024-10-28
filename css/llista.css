@@ -41,7 +41,6 @@ body {
 */
 
 
-
 /* Contenedor de video con fondo gris */
 .video-item {
     display: flex;
@@ -49,7 +48,6 @@ body {
     background-color: #e0e0e0; /* Fondo gris claro */
     padding: 15px;
     border-radius: 8px;
-    margin-bottom: 20px; /* Espacio entre cada bloque */
 }
 
 /* Configuración de una columna para pantallas más pequeñas */
@@ -73,8 +71,7 @@ body {
         width: 90%;
     }
     .video-item {
-        width: 100%;
-        margin-bottom: 0; /* Sin espacio adicional dentro del grid */
+        margin-bottom: 0; /* Sin margen adicional en grid */
     }
 }
 
