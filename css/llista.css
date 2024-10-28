@@ -17,26 +17,40 @@ body {
     justify-content: space-between;
 }
 
-/* Estilo de los videos y resúmenes */
+/* Estilo de los videos y resúmenes (antes) */
+/*
 .video-item {
     display: flex;
-    align-items: flex-start; /* Alinea desde la parte superior */
+    align-items: flex-start; // Alinea desde la parte superior 
     justify-content: space-between;
-    margin-bottom: 10px; /* Espacio entre videos */
+    margin-bottom: 10px; // Espacio entre videos 
 }
 
 .video-container {
-    width: 60%; /* Ocupa el 60% del espacio */
+    width: 60%; // Ocupa el 60% del espacio
 }
+
+.summary-container {
+    width: 40%; // Ocupa el 40% del espacio 
+    padding-left: 20px; // Espacio entre video y resumen 
+}
+*/
+
+/* nou */
+.video-item {
+    display: block; /* Cambia de flex a block para forzar una sola columna */
+    width: 100%; /* Ocupa el 100% del ancho */
+    margin-bottom: 10px; /* Espacio entre los videos */
+}
+.summary-container, .video-container {
+    width: 100%; /* Asegura que los contenedores internos también ocupen el 100% */
+    padding-left: 0; /* Elimina el padding izquierdo para centrar el contenido */
+}
+
 
 .video-container iframe {
     width: 100%; /* Ancho completo */
     height: 250px; /* Altura predeterminada */
-}
-
-.summary-container {
-    width: 40%; /* Ocupa el 40% del espacio */
-    padding-left: 20px; /* Espacio entre video y resumen */
 }
 
 /* Estilos del botón */
