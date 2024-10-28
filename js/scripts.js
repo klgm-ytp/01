@@ -49,6 +49,13 @@ function generarSelector(videos) {
     filtrarVideosPorTipo(tato, videos);
 }
 
+// Evento para mostrar/ocultar el menú arborificado
+document.querySelector('label[for="video-type"]').addEventListener('click', function() {
+    const menuArbol = document.getElementById('menu-arbol');
+    // Cambiar la visibilidad del menú
+    menuArbol.style.display = (menuArbol.style.display === 'none' || menuArbol.style.display === '') ? 'block' : 'none';
+});
+
 function construirArbolDeTipos(videos) {
     const arbol = {};
     videos.forEach(video => {
