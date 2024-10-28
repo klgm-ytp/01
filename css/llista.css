@@ -45,22 +45,22 @@ body {
 /* Contenedor de video con fondo gris */
 .video-item {
     display: flex;
-    flex-direction: column; /* Para alinear video y comentario en una sola columna */
+    flex-direction: column;
     background-color: #e0e0e0; /* Fondo gris claro */
     padding: 15px;
     border-radius: 8px;
-    margin-bottom: 15px;
+    margin-bottom: 20px; /* Espacio entre cada bloque */
 }
 
 /* Configuración de una columna para pantallas más pequeñas */
 @media (max-width: 768px) {
     .container {
-        display: block; /* Estilo en una columna */
-        width: 80%; /* 80% de ancho total para centrado */
+        display: block;
+        width: 80%;
     }
     .video-item {
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 20px; /* Espacio uniforme entre bloques */
     }
 }
 
@@ -74,8 +74,10 @@ body {
     }
     .video-item {
         width: 100%;
+        margin-bottom: 0; /* Sin espacio adicional dentro del grid */
     }
 }
+
 
 
 
