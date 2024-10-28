@@ -17,6 +17,10 @@ body {
     justify-content: space-between;
 }
 
+
+
+
+
 /* Estilo de los videos y resúmenes (antes) */
 /*
 .video-item {
@@ -36,12 +40,56 @@ body {
 }
 */
 
-/* nou */
+
+
+/* Contenedor de video con fondo gris */
 .video-item {
-    display: block; /* Cambia de flex a block para forzar una sola columna */
-    width: 100%; /* Ocupa el 100% del ancho */
-    margin-bottom: 10px; /* Espacio entre los videos */
+    display: flex;
+    flex-direction: column; /* Para alinear video y comentario en una sola columna */
+    background-color: #e0e0e0; /* Fondo gris claro */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
+
+/* Configuración de una columna para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .container {
+        display: block; /* Estilo en una columna */
+        width: 80%; /* 80% de ancho total para centrado */
+    }
+    .video-item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Configuración de tres columnas para pantallas grandes */
+@media (min-width: 769px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+        gap: 20px; /* Espacio entre columnas y filas */
+        width: 90%;
+    }
+    .video-item {
+        width: 100%;
+    }
+}
+
+
+
+
+/* ex-nou */
+
+/*
+.video-item {
+    display: block; // Cambia de flex a block para forzar una sola columna
+    width: 100%; // Ocupa el 100% del ancho
+    margin-bottom: 10px; // Espacio entre los videos
+}
+*/
+
 .summary-container, .video-container {
     width: 100%; /* Asegura que los contenedores internos también ocupen el 100% */
     padding-left: 0; /* Elimina el padding izquierdo para centrar el contenido */
