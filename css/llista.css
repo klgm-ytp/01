@@ -41,13 +41,18 @@ body {
 */
 
 
+
 /* Contenedor de video con fondo gris */
+.video-item-wrapper {
+    margin-bottom: 20px; /* Espacio uniforme entre bloques para pantallas pequeñas */
+}
+
 .video-item {
-    display: flex;
-    flex-direction: column;
     background-color: #e0e0e0; /* Fondo gris claro */
     padding: 15px;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Configuración de una columna para pantallas más pequeñas */
@@ -56,8 +61,7 @@ body {
         display: block;
         width: 80%;
     }
-    .video-item {
-        width: 100%;
+    .video-item-wrapper {
         margin-bottom: 20px; /* Espacio uniforme entre bloques */
     }
 }
@@ -70,10 +74,14 @@ body {
         gap: 20px; /* Espacio entre columnas y filas */
         width: 90%;
     }
-    .video-item {
+    .video-item-wrapper {
         margin-bottom: 0; /* Sin margen adicional en grid */
     }
 }
+
+
+
+
 
 
 
