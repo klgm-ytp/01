@@ -381,6 +381,87 @@
       "url": "https://www.youtube.com/embed/HTLPxzvU4js",
       "resumen": "Perplexity vs ChatGPT",
       "tipus" : "Noticies > AI > Comparacions"
+    },     
+    {
+      "codi" : "39",
+      "data" : "24/10/2024",
+      "pendent" : "arreglar data",
+      "medi" : "YT",
+      "autor" : "Xavier Mitjana",
+      "url" : "https://www.youtube.com/embed/VYk_wQElg5I",
+      "resumen" : "Generador de prompts (pendent veure i apuntar què diu)",
+      "tipus" : "Noticies > AI > Xavier Mitjana"
+    },     
+    {
+      "codi" : "40",
+      "data" : "24/10/2024",
+      "pendent" : "arreglar data",
+      "medi" : "YT",
+      "autor" : "Xavier Mitjana",
+      "url" : "https://www.youtube.com/embed/Sqyezy_W_k0",
+      "resumen" : "Gestió de projectes amb IA",
+      "tipus" : "Noticies > AI > Xavier Mitjana"
+    },     
+    {
+      "codi" : "41",
+      "data" : "31/10/2024",
+      "pendent" : "arreglar data",
+      "medi" : "YT",
+      "autor" : "SALVAJE",
+      "url" : "https://www.youtube.com/embed/9QnQNEczkF4",
+      "resumen" : "Generador de Prompts per ChatGPT",
+      "tipus" : "Noticies > AI > SALVAJE"
+    },
+    {
+      "codi" : "42",
+      "data" : "31/10/2024",
+      "pendent" : "arreglar data",
+      "medi" : "ChatGPT",
+      "autor" : "joanignasi",
+      "XXXXXXXXXXXXXXX extra" : "https://chatgpt.com/share/6721ce76-c8ec-8008-a782-7cd283dd53c7",
+      "url": "https://www.youtube.com/embed/uA2JysL5Yso",
+      "resumen": "PENDENT ARREGLAR AQUEST REGISTRE - De la abstracció filosòfica a la psicologia",
+      "tipus" : "Chats públics > ChatGPT"
+    },
+    {
+      "codi" : "43",
+      "data" : "31/10/2024",
+      "pendent" : "arreglar data",
+      "medi" : "YT",
+      "autor" : "Math Window",
+      "url": "https://www.youtube.com/embed/GAdv6bJwav4",
+      "resumen": "més solucions per 2^x = x^2",
+      "tipus" : "Matemàtiques > Math Window"
+    },
+    {
+      "codi" : "44",
+      "data" : "31/10/2024",
+      "pendent" : "arreglar data",
+      "medi" : "YT",
+      "autor" : "Math Window",
+      "url": "https://www.youtube.com/embed/GAdv6bJwav4",
+      "resumen": "més solucions per 2^x = x^2",
+      "tipus" : "Matemàtiques > Math Window"
+    },
+    {
+      "codi" : "45",
+      "data" : "31/10/2024",
+      "pendent" : "arreglar data",
+      "medi" : "YT",
+      "autor" : "EdTeam",
+      "url": "https://www.youtube.com/embed/tUR1Ol4YIYI",
+      "resumen": "Agents IA per a programar (Replit, Cursor, Bolt)",
+      "tipus" : "Noticies > IA > EdTeam"
+    },
+    {
+      "codi" : "46",
+      "data" : "31/10/2024",
+      "pendent" : "arreglar data",
+      "medi" : "YT",
+      "autor" : "La Manzana Mordida",
+      "url": "https://www.youtube.com/embed/z4sqssq1R6s",
+      "resumen": "El nou Mac Mini M4",
+      "tipus" : "Noticies > Mac > La Manzana Mordida"
     }
   ]
 }
