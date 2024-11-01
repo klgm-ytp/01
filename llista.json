@@ -462,6 +462,16 @@
       "url": "https://www.youtube.com/embed/z4sqssq1R6s",
       "resumen": "El nou Mac Mini M4",
       "tipus" : "Noticies > Mac > La Manzana Mordida"
+    },
+    {
+      "codi" : "47",
+      "data" : "1/11/2024",
+      "pendent" : "arreglar data",
+      "medi" : "YT",
+      "autor" : "DOT CSV Lab",
+      "url": "https://www.youtube.com/embed/UpW55J8mSV4",
+      "resumen": "Eina opensource per a clonar veus",
+      "tipus" : "Noticies > IA > DOT CSV Lab"
     }
   ]
 }
