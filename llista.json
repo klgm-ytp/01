@@ -472,6 +472,40 @@
       "url": "https://www.youtube.com/embed/UpW55J8mSV4",
       "resumen": "Eina opensource per a clonar veus",
       "tipus" : "Noticies > IA > DOT CSV Lab"
+    },
+    {
+      "codi" : "48",
+      "data" : "1/11/2024",
+      "pendent" : "arreglar data",
+      "medi" : "YT",
+      "autor" : "Pet Shop Boys",
+      "url": "https://www.youtube.com/embed/dRHetRTOD1Q",
+      "resumen": "Es foten rarament amb la religió. La veritat encara he de veure que diuen...",
+      "tipus" : "Música > Pop > Pet Shop Boys > It's a Sin"
+    },
+    {
+      "codi" : "49",
+      "data" : "1/11/2024",
+      "pendent" : "arreglar data",
+      "medi" : "YT",
+      "autor" : "Marilyn Manson",
+      "url": "https://www.youtube.com/embed/Rl6fyhZ0G5E",
+      "resumen": "Es fot també rarament amb la religió. La veritat encara he de veure que diu...",
+      "tipus" : "Música > Pop > Marilyn Manson > Personal Jesus"
+    },
+    {
+      "codi" : "50",
+      "data" : "1/11/2024",
+      "pendent" : "arreglar data",
+      "medi" : "YT",
+      "autor" : "Marilyn Manson",
+      "url": "https://www.youtube.com/embed/QUvVdTlA23w",
+      "resumen": "Molt filosofic... A més el video sembla un homenatge als Hermanos Calatrava a la peli del Ete i el Oto...",
+      "tipus" : "Música > Pop > Marilyn Manson > Sweet Dreams are made of this"
     }
+
+
+    
+    
   ]
 }
