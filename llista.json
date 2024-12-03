@@ -512,6 +512,16 @@
       "url": "https://www.youtube.com/embed/8GalZr6BhD4",
       "resumen": "".
       "tipus" : ""
+    },
+    {
+      "codi" : "52",
+      "data" : "1/12/2024",
+      "pendent" : "arreglar data",
+      "medi" : "YT",
+      "autor" : "Crusher",
+      "url": "https://www.youtube.com/embed/cQKGUgOfD8U",
+      "resumen": "".
+      "tipus" : ""
     }
   ]
 }
