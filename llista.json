@@ -522,6 +522,16 @@
       "url": "https://www.youtube.com/embed/cQKGUgOfD8U",
       "resumen": "【VOCALOID Original】ECHO【Gumi English】",
       "tipus" : "Vocaloid > Varis"
+    },
+    {
+      "codi" : "53",
+      "data" : "1/12/2024",
+      "pendent" : "arreglar data",
+      "medi" : "YT",
+      "autor" : "KUMA 8",
+      "url": "https://www.youtube.com/embed/1eiNFfkazrA",
+      "resumen": "【MMD Cup 8】『SCATMAN』【SCATMAN JOHN】",
+      "tipus" : "MMD > Varis"
     }
   ]
 }
