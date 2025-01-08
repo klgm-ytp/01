@@ -813,11 +813,11 @@ Música > alyankovic
 -
 https://www.youtube.com/watch?v=ls5nRuUhEKQ
 Reaccionando al STATE OF REACT 2024: Explicando +15 APIs con Ejemplos
-Informàtica > Programació > React > midulive
+Informàtica > Programació > Frontend > React > midulive
 -
 https://www.youtube.com/watch?v=pWR9QIlptzE
 Ok, Angular 19 is amazing...
-Informàtica > Programació > Angular > midulive
+Informàtica > Programació > Frontend > Angular > midulive
 -
 https://www.youtube.com/watch?v=0gRM8ClT2s8
 ¡Novedad! ChatGPT MULTIPLICA su UTILIDAD con esta función 🤯 Ejemplo y tutorial
@@ -826,4 +826,12 @@ IA > ChatGPT > Xavier Mitjana
 https://www.youtube.com/watch?v=JJVNScy-6eo
 Crearon Linux en el Navegador con WebAssembly y es INCREÍBLE
 Informàtica > Sistemes > Virtualització > Linux > midulive
+-
+https://www.youtube.com/watch?v=QY_YDEMDfSw
+¡Github Copilot GRATIS para VSCode!
+Informàtica > IA > Programació > midulive
+-
+https://www.youtube.com/watch?v=0lggWaOU8tw&t=2s
+ROLLDOWN va a sustituir a VITE??
+Informàtica > Programació > Frontend > Vida MRR - Programacion web
 -
