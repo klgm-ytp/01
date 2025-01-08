@@ -815,3 +815,7 @@ https://www.youtube.com/watch?v=ls5nRuUhEKQ
 Reaccionando al STATE OF REACT 2024: Explicando +15 APIs con Ejemplos
 Informàtica > Programació > React > midulive
 -
+https://www.youtube.com/watch?v=pWR9QIlptzE
+Ok, Angular 19 is amazing...
+Informàtica > Programació > Angular > midulive
+-
